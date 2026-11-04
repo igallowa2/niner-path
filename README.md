@@ -87,13 +87,17 @@ src/
 
 ## AI usage disclosure
 
+We used AI tools during this sprint:
+Claude
+Co-pilot
+
 
 - **GitHub Copilot (VS Code)** with the **Figma MCP Server** to read our Figma Job Tracker frame and suggest components, layout, and an implementation plan.
 - **Claude** to help draft GitHub Issues from our user stories and to suggest starter code and tests for the Job Tracker.
 
-What our team did ourselves: 
+What our team did ourselves: reviewed every suggestion before using it, changed the code to fit our design and acceptance criteria, ran the tests and the manual checklist, and fixed problems we found (for example, a form layout overflow on narrow screens). Every team member can explain how the feature works.
 
-
+_Team: edit this section so it matches exactly what each tool did and what you changed._
 
 ## Team
 
