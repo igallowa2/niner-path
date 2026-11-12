@@ -10,14 +10,30 @@ This repository holds our ITSC 3155 Sprint 1 work. The feature built in Sprint 1
 - Vite (dev server and build)
 - Vitest + React Testing Library (tests)
 - Browser localStorage (saves data for Sprint 1)
+- Express API server in `server/` (keeps Adzuna and O*NET keys off the browser)
 
 ## Install dependencies
 
-You need [Node.js](https://nodejs.org) 20 or newer.
+You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```bash
 npm install
 ```
+
+## Set up `.env`, the database, and API keys
+
+1. Copy the example file: `cp .env.example .env`
+2. Create your local database and load sample data:
+   ```bash
+   npm run db:migrate
+   npm run db:seed
+   ```
+3. For Find Jobs and Explore Careers, get free keys:
+   - Adzuna: https://developer.adzuna.com/signup (gives an **App ID** and an **App Key**)
+   - O*NET Web Services: https://services.onetcenter.org/developer/signup (gives an **API key**)
+4. Open `.env` and replace the `your-...` placeholders. Save the file.
+
+`.env` is in `.gitignore`: **never commit it**. Keys are only read by the server. They do not start with `VITE_`, so they are never sent to the browser. Without keys the app still runs; the search pages show "isn't set up yet."
 
 ## Run the app locally
 
@@ -25,7 +41,32 @@ npm install
 npm run dev
 ```
 
-Then open the link it prints (usually http://localhost:5173).
+This starts both the React app (http://localhost:5173) and the API server (http://localhost:3001). Open the React link. Vite forwards `/api/...` requests to the server.
+
+- `npm run server` (or `npm run dev:server`) starts only the API server; `npm run dev:web` starts only the React app.
+- Check the server: open http://localhost:3001/api/health (shows whether each service has a key, never the keys).
+
+## Find Jobs and Explore Careers (Sprint 2)
+
+- **Find Jobs** (sidebar): search real listings from Adzuna by keyword and location. **Save to tracker** adds a job to the Job Tracker as "Saved" with its posting link.
+- **Explore Careers** (sidebar): enter a major, interest, or keyword to see matching careers from O*NET. Click a career to search jobs with that title.
+- **Errors** show friendly messages: no results, bad key, free limit reached, service not responding, server not running.
+- **Caching**: the server remembers job searches for 10 minutes and career searches for 24 hours, so repeat searches don't use up free API calls.
+- **Attribution**: "Jobs by Adzuna" and the O*NET Web Services credit are shown as their terms require.
+
+API routes (our server):
+
+| Route | What it does |
+|-------|--------------|
+| `GET /api/applications` | All tracked applications (from the database) |
+| `POST /api/applications` | Add an application |
+| `PATCH /api/applications/:id/status` | Change an application's status |
+| `DELETE /api/applications/:id` | Delete an application |
+| `GET /api/jobs?what=&where=&page=` | Adzuna job search, simplified |
+| `GET /api/careers?keyword=` | O*NET career search, simplified |
+| `GET /api/health` | Which services are configured |
+
+**AI assistant: paused.** The Claude-based assistant is turned off to avoid API costs. Any future AI UI must check `features.aiAssistant` in `src/config/features.ts`, controlled by `VITE_ENABLE_AI_ASSISTANT` (default `false`).
 
 ## The implemented feature: Job Tracker
 
@@ -52,12 +93,17 @@ Design reference: [Figma prototype](https://www.figma.com/make/mP7NjRr3GMpWn9unn
 npm test
 ```
 
-There are 14 tests in two files:
+There are 40 tests in five files. None of them call the real Adzuna or O*NET APIs or need keys (they use fake replies).
 
 | Test file | What it checks |
 |-----------|----------------|
 | `src/lib/validation.test.ts` | Required fields, link format, blank link allowed |
 | `src/components/JobTracker.test.tsx` | Empty state, form opens, errors block saving, valid save adds a card with status "Saved", Cancel doesn't save, status change updates the badge, data survives a reload |
+| `server/app.test.ts` | Adzuna/O*NET requests are built correctly, replies are simplified, keys never leak, caching and cache expiry, empty/too-long searches rejected, bad key / rate limit / network errors |
+| `src/lib/jobs.test.ts` | Career title → job keyword, job type guess, salary format, listing → tracker application |
+| `src/components/JobSearch.test.tsx` | Find Jobs results, Save to tracker, empty search, no results, friendly error messages, clicking a career searches jobs |
+
+Other checks: `npm run typecheck` (TypeScript) and `npm run lint`.
 
 ### Manual test checklist
 
@@ -83,21 +129,31 @@ src/
   components/JobTracker.tsx        Page: list, add, status change
   components/AddApplicationForm.tsx
   components/ApplicationCard.tsx
+  components/JobSearch.tsx         Find Jobs page (Adzuna, via our server)
+  components/CareerExplorer.tsx    Explore Careers page (O*NET, via our server)
+  lib/api.ts                       Calls our /api routes; friendly error messages
+  lib/jobs.ts                      Helpers: career → keyword, listing → application
+  config/features.ts               Feature flags (AI assistant off)
+server/
+  index.ts                         Starts the API server, loads .env
+  app.ts                           Routes, input checks, caching, error replies
+  adzuna.ts                        Adzuna job search
+  onet.ts                          O*NET career search
+  cache.ts                         Small in-memory cache
+  errors.ts                        Error codes and timeouts
+shared/
+  api.ts                           TypeScript types shared by server and app
 ```
 
 ## AI usage disclosure
-
-We used AI tools during this sprint:
-Claude
-Co-pilot
 
 
 - **GitHub Copilot (VS Code)** with the **Figma MCP Server** to read our Figma Job Tracker frame and suggest components, layout, and an implementation plan.
 - **Claude** to help draft GitHub Issues from our user stories and to suggest starter code and tests for the Job Tracker.
 
-What our team did ourselves: reviewed every suggestion before using it, changed the code to fit our design and acceptance criteria, ran the tests and the manual checklist, and fixed problems we found (for example, a form layout overflow on narrow screens). Every team member can explain how the feature works.
+What our team did ourselves: 
 
-_Team: edit this section so it matches exactly what each tool did and what you changed._
+
 
 ## Team
 
