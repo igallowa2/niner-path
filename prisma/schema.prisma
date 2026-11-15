@@ -1,0 +1,39 @@
+// Niner Path data model (Sprint 2).
+// SQLite does not support enums in Prisma, so status and jobType are stored as text
+// and checked against STATUSES / JOB_TYPES (src/types.ts) in server/applicationRepository.ts.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// One job or internship a student is tracking.
+model JobApplication {
+  id         String         @id @default(cuid())
+  company    String
+  role       String
+  location   String         @default("")
+  jobType    String         @default("Internship") // one of JOB_TYPES
+  industry   String         @default("")
+  deadline   String         @default("") // YYYY-MM-DD, or "" when there is no deadline
+  status     String         @default("Saved") // one of STATUSES
+  postingUrl String         @default("")
+  createdAt  DateTime       @default(now())
+  updatedAt  DateTime       @updatedAt
+  timeline   StatusChange[]
+}
+
+/// Every status change, so the card can show its history ("last change" date).
+model StatusChange {
+  id            Int            @id @default(autoincrement())
+  status        String // one of STATUSES
+  date          String // YYYY-MM-DD
+  applicationId String
+  application   JobApplication @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+
+  @@index([applicationId])
+}

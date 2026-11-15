@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# Private keys
+*.pem
+*.key
+
+# Local database files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
