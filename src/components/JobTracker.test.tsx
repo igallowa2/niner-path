@@ -71,6 +71,29 @@ describe('Job Tracker: add an application', () => {
 })
 
 describe('Job Tracker: status and saving', () => {
+  it('shows a follow-up reminder and hides it when the status changes', async () => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([{
+      id: 'old-application',
+      company: 'Acme',
+      role: 'Analyst',
+      location: '',
+      jobType: 'Internship',
+      industry: '',
+      deadline: '',
+      status: 'Applied',
+      postingUrl: '',
+      timeline: [{ status: 'Applied', date: '2020-01-01' }],
+    }]))
+    render(<JobTracker />)
+
+    expect(screen.getByRole('complementary', { name: 'Follow-up reminder' }))
+      .toHaveTextContent(/Applied \d+ days ago\. Send a follow-up\?/)
+
+    const user = userEvent.setup()
+    await user.selectOptions(screen.getByLabelText('Change status for Acme'), 'Interviewing')
+    expect(screen.queryByRole('complementary', { name: 'Follow-up reminder' })).not.toBeInTheDocument()
+  })
+
   it('updates the status badge when the status is changed', async () => {
     render(<JobTracker />)
     const user = await openForm()

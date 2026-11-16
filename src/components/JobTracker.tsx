@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import type { Application, ApplicationInput, Status } from '../types'
 import { loadApplications, newId, saveApplications, today } from '../lib/storage'
 import { AddApplicationForm } from './AddApplicationForm'
 import { ApplicationCard } from './ApplicationCard'
+import { FollowUpReminder } from './FollowUpReminder'
 
 export function JobTracker() {
   const [apps, setApps] = useState<Application[]>(() => loadApplications())
@@ -49,7 +50,12 @@ export function JobTracker() {
         </div>
       ) : (
         <div className="list">
-          {apps.map((a) => <ApplicationCard key={a.id} app={a} onStatusChange={changeStatus} />)}
+          {apps.map((a) => (
+            <Fragment key={a.id}>
+              <FollowUpReminder app={a} />
+              <ApplicationCard app={a} onStatusChange={changeStatus} />
+            </Fragment>
+          ))}
         </div>
       )}
 
