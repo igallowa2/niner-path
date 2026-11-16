@@ -1,5 +1,6 @@
 import type { JobListing } from '../../shared/api'
-import type { ApplicationInput, JobType } from '../types'
+import type { Opportunity } from '../data/sampleJobs'
+import type { Application, ApplicationInput, JobType } from '../types'
 
 /**
  * Turns an O*NET career title into a good job-search keyword.
@@ -31,6 +32,34 @@ export function jobToApplication(job: JobListing): ApplicationInput {
     status: 'Saved',
     postingUrl: job.url,
   }
+}
+
+/** Turns a Find Jobs opportunity into a Job Tracker application (status "Saved"). */
+export function opportunityToApplication(o: Opportunity): ApplicationInput {
+  return {
+    company: o.company,
+    role: o.title,
+    location: o.location,
+    jobType: o.jobType,
+    industry: o.industries[0] ?? '',
+    deadline: o.deadline,
+    status: 'Saved',
+    postingUrl: o.postingUrl,
+  }
+}
+
+type TrackedFields = Pick<Application, 'company' | 'role' | 'postingUrl'>
+
+const norm = (s: string) => s.trim().toLowerCase()
+
+/**
+ * Is this job already in the tracker? Matches on the posting link, or on
+ * company + role when the job has no link.
+ */
+export function isAlreadyTracked(tracked: readonly TrackedFields[], job: TrackedFields): boolean {
+  const url = norm(job.postingUrl)
+  if (url) return tracked.some((t) => norm(t.postingUrl) === url)
+  return tracked.some((t) => norm(t.company) === norm(job.company) && norm(t.role) === norm(job.role))
 }
 
 /** "$55,000 – $70,000", "$60,000", or '' when Adzuna has no salary. */

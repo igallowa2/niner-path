@@ -125,11 +125,10 @@ interface LiveDetailProps {
   job: JobListing
   inTracker: boolean
   saving: boolean
-  saveError: string
   onSave: () => void
 }
 
-export function LiveJobDetail({ job, inTracker, saving, saveError, onSave }: LiveDetailProps) {
+export function LiveJobDetail({ job, inTracker, saving, onSave }: LiveDetailProps) {
   const salary = formatSalary(job.salaryMin, job.salaryMax)
   return (
     <article className="fj-detail" aria-labelledby="fj-detail-title">
@@ -147,7 +146,6 @@ export function LiveJobDetail({ job, inTracker, saving, saveError, onSave }: Liv
       <button type="button" className="btn primary fj-save-btn" onClick={onSave} disabled={inTracker || saving}>
         {inTracker ? 'In tracker ✓' : saving ? 'Saving…' : 'Save to tracker'}
       </button>
-      {saveError && <p className="alert" role="alert">{saveError}</p>}
       <p className="fj-meta fj-note">Live listing from Adzuna. Match scores and skills are shown for sample openings only.</p>
     </article>
   )

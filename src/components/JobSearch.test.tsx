@@ -3,7 +3,7 @@ import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from '../App'
 import { JobSearch } from './JobSearch'
-import { BOOKMARKS_KEY, FILTER_PREFS_KEY } from '../lib/findJobs'
+import { FILTER_PREFS_KEY } from '../lib/findJobs'
 import type { CareerSearchResponse, JobSearchResponse } from '../../shared/api'
 
 // The browser code only calls OUR /api routes. Here we fake those replies,
@@ -212,15 +212,13 @@ describe('Find Jobs: collapsible filters', () => {
 })
 
 describe('Find Jobs: bookmarks and quick links', () => {
-  it('toggles a bookmark and saves it', async () => {
+  it('saves a sample job to the tracker from its save icon', async () => {
     render(<JobSearch />)
     const user = userEvent.setup()
-    await user.click(screen.getByRole('button', { name: 'Save Data Analyst Program at Bank of America' }))
-    expect(screen.getByRole('button', { name: 'Unsave Data Analyst Program at Bank of America' })).toHaveAttribute('aria-pressed', 'true')
-    expect(JSON.parse(localStorage.getItem(BOOKMARKS_KEY)!)).toEqual(['boa-data-analyst'])
-
-    await user.click(screen.getByRole('button', { name: 'Unsave Data Analyst Program at Bank of America' }))
-    expect(JSON.parse(localStorage.getItem(BOOKMARKS_KEY)!)).toEqual([])
+    await user.click(screen.getAllByRole('button', { name: 'Save job to tracker' })[0])
+    expect(await screen.findByText('Saved to Job Tracker')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Saved' })).toHaveAttribute('aria-pressed', 'true')
+    expect(savedToTracker[0]).toMatchObject({ company: 'Bank of America', role: 'Data Analyst Program', status: 'Saved' })
   })
 
   it('applies each quick-link view, and clicking again goes back to Best match', async () => {

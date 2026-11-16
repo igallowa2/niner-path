@@ -215,7 +215,6 @@ export const DEFAULT_FILTER_PREFS: FilterPrefs = {
 }
 
 export const FILTER_PREFS_KEY = 'niner-path.findJobs.filters'
-export const BOOKMARKS_KEY = 'niner-path.findJobs.bookmarks'
 
 /** Reads JSON from localStorage. Returns `fallback` if storage is blocked, empty, or holds bad data. */
 export function readStored<T>(key: string, fallback: T, isValid: (value: unknown) => value is T): T {
@@ -248,8 +247,4 @@ export function isFilterPrefs(value: unknown): value is FilterPrefs {
     Array.isArray(v.selected) &&
     v.selected.every((f) => (ALL_FILTERS as string[]).includes(f))
   )
-}
-
-export function isStringArray(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every((v) => typeof v === 'string')
 }

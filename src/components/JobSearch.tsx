@@ -4,14 +4,12 @@ import { SAMPLE_AS_OF, sampleOpportunities } from '../data/sampleJobs'
 import { friendlyMessage, searchJobs } from '../lib/api'
 import {
   applyView,
-  BOOKMARKS_KEY,
   closingSoon,
   deadlineRange,
   DEFAULT_FILTER_PREFS,
   FILTER_PREFS_KEY,
   filtersNotAppliedToLive,
   isFilterPrefs,
-  isStringArray,
   liveJobHasFilter,
   matchesSearch,
   opportunityHasFilter,
@@ -27,9 +25,10 @@ import {
   type SearchQuery,
   type View,
 } from '../lib/findJobs'
-import { jobToApplication } from '../lib/jobs'
+import { isAlreadyTracked, jobToApplication, opportunityToApplication } from '../lib/jobs'
 import { getProfile, profileSummary } from '../lib/profile'
 import { appendApplication, loadApplications } from '../lib/storage'
+import type { Application, ApplicationInput } from '../types'
 import { AppHeader } from './AppHeader'
 import { FiltersPanel } from './find-jobs/FiltersPanel'
 import { LiveJobCard, OpportunityCard } from './find-jobs/JobCards'
@@ -60,28 +59,35 @@ export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
   const [query, setQuery] = useState<SearchQuery>({ text: initialWhat, location: '' })
   const [prefs, setPrefs] = useState<FilterPrefs>(() => readStored(FILTER_PREFS_KEY, DEFAULT_FILTER_PREFS, isFilterPrefs))
   const [view, setView] = useState<View>('best')
-  const [bookmarks, setBookmarks] = useState<Set<string>>(() => new Set(readStored(BOOKMARKS_KEY, [], isStringArray)))
   const [selection, setSelection] = useState<Selection>(null)
 
   const [live, setLive] = useState<LiveState>({ kind: 'idle' })
   const latestRequest = useRef(0) // ignore replies from older live searches
-  const [trackedUrls, setTrackedUrls] = useState<Set<string>>(() => new Set())
-  const [savingId, setSavingId] = useState<string | null>(null)
-  const [saveError, setSaveError] = useState('')
+  // Applications already in the Job Tracker, so saved jobs show a filled icon and aren't added twice.
+  const [tracked, setTracked] = useState<Application[]>([])
+  const [savingIds, setSavingIds] = useState<Set<string>>(() => new Set())
+  const pendingSaves = useRef(new Set<string>()) // blocks a fast double-click before state updates
+  const [notice, setNotice] = useState<{ kind: 'success' | 'error'; text: string } | null>(null)
   const detailRef = useRef<HTMLDivElement>(null)
 
-  // Remember filter choices and bookmarks between visits.
+  // Remember filter choices between visits.
   useEffect(() => writeStored(FILTER_PREFS_KEY, prefs), [prefs])
-  useEffect(() => writeStored(BOOKMARKS_KEY, [...bookmarks]), [bookmarks])
 
-  // Which live postings are already in the Job Tracker (so we can show "In tracker ✓").
+  // Which jobs are already in the Job Tracker.
   useEffect(() => {
     let ignore = false
     loadApplications()
-      .then((list) => { if (!ignore) setTrackedUrls(new Set(list.map((a) => a.postingUrl).filter(Boolean))) })
+      .then((list) => { if (!ignore) setTracked(list) })
       .catch(() => {}) // The Job Tracker page shows connection errors; saving still works here.
     return () => { ignore = true }
   }, [])
+
+  // Hide the "Saved to Job Tracker" message after a few seconds.
+  useEffect(() => {
+    if (!notice) return
+    const timer = setTimeout(() => setNotice(null), 4000)
+    return () => clearTimeout(timer)
+  }, [notice])
 
   async function runLiveSearch(q: SearchQuery) {
     const text = q.text.trim()
@@ -126,34 +132,36 @@ export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
     setDraft({ text: '', location: '' })
   }
 
-  function toggleBookmark(id: string) {
-    setBookmarks((b) => {
-      const next = new Set(b)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
-    })
-  }
-
   function select(next: Selection) {
     setSelection(next)
-    setSaveError('')
     // On narrow screens the detail panel is below the list, so bring it into view.
     if (typeof window.matchMedia === 'function' && window.matchMedia('(max-width: 1099px)').matches) {
       detailRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
     }
   }
 
-  async function saveLiveJob(job: JobListing) {
-    setSaveError('')
-    setSavingId(job.id)
+  /** Adds a job to the Job Tracker (POST /api/applications) unless it's already there. */
+  async function saveToTracker(jobId: string, input: ApplicationInput) {
+    if (pendingSaves.current.has(jobId)) return
+    if (isAlreadyTracked(tracked, input)) {
+      setNotice({ kind: 'success', text: 'Already in your Job Tracker' })
+      return
+    }
+    pendingSaves.current.add(jobId)
+    setSavingIds((s) => new Set(s).add(jobId))
     try {
-      await appendApplication(jobToApplication(job))
-      setTrackedUrls((s) => new Set(s).add(job.url))
+      const created = await appendApplication(input)
+      setTracked((t) => [created, ...t])
+      setNotice({ kind: 'success', text: 'Saved to Job Tracker' })
     } catch (err) {
-      setSaveError(`Couldn't save "${job.title}" to your tracker. ${err instanceof Error ? err.message : ''}`.trim())
+      setNotice({ kind: 'error', text: `Couldn't save "${input.role}" to your tracker. ${err instanceof Error ? err.message : ''}`.trim() })
     } finally {
-      setSavingId(null)
+      pendingSaves.current.delete(jobId)
+      setSavingIds((s) => {
+        const next = new Set(s)
+        next.delete(jobId)
+        return next
+      })
     }
   }
 
@@ -248,9 +256,10 @@ export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
                     key={job.id}
                     job={job}
                     selected={shownSample?.id === job.id}
-                    bookmarked={bookmarks.has(job.id)}
+                    saved={isAlreadyTracked(tracked, opportunityToApplication(job))}
+                    saving={savingIds.has(job.id)}
+                    onSave={() => void saveToTracker(job.id, opportunityToApplication(job))}
                     onSelect={() => select({ kind: 'sample', id: job.id })}
-                    onToggleBookmark={() => toggleBookmark(job.id)}
                   />
                 ))}
               </ul>
@@ -277,7 +286,9 @@ export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
                         key={job.id}
                         job={job}
                         selected={shownLive?.id === job.id}
-                        inTracker={!!job.url && trackedUrls.has(job.url)}
+                        saved={isAlreadyTracked(tracked, jobToApplication(job))}
+                        saving={savingIds.has(job.id)}
+                        onSave={() => void saveToTracker(job.id, jobToApplication(job))}
                         onSelect={() => select({ kind: 'live', id: job.id })}
                       />
                     ))}
@@ -296,13 +307,17 @@ export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
           {shownLive && (
             <LiveJobDetail
               job={shownLive}
-              inTracker={!!shownLive.url && trackedUrls.has(shownLive.url)}
-              saving={savingId === shownLive.id}
-              saveError={saveError}
-              onSave={() => void saveLiveJob(shownLive)}
+              inTracker={isAlreadyTracked(tracked, jobToApplication(shownLive))}
+              saving={savingIds.has(shownLive.id)}
+              onSave={() => void saveToTracker(shownLive.id, jobToApplication(shownLive))}
             />
           )}
         </div>
+      </div>
+
+      {/* Always rendered so screen readers announce new messages. */}
+      <div className="fj-toast-region" role="status" aria-live="polite">
+        {notice && <p className={`fj-toast${notice.kind === 'error' ? ' error' : ''}`}>{notice.text}</p>}
       </div>
     </section>
   )

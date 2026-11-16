@@ -86,7 +86,13 @@
 .fj-live-tag { color: var(--muted); font-weight: 600; }
 .fj-bookmark { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 8px; background: transparent; color: var(--muted); cursor: pointer; }
 .fj-bookmark:hover { background: rgba(0, 0, 0, .04); color: var(--green); }
-.fj-bookmark.on { color: var(--green); }
+.fj-bookmark.on { color: var(--green); cursor: default; }
+.fj-bookmark[aria-busy="true"] { opacity: .6; }
+
+/* "Saved to Job Tracker" message, pinned to the bottom of the screen. */
+.fj-toast-region { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); z-index: 20; width: max-content; max-width: calc(100vw - 32px); pointer-events: none; }
+.fj-toast { background: var(--green); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgba(20, 30, 25, .2); }
+.fj-toast.error { background: var(--error); }
 
 .fj-empty { display: grid; justify-items: center; gap: 8px; text-align: center; padding: 36px 16px; background: var(--panel); border: 1px dashed var(--line); border-radius: var(--fj-radius); }
 .fj-empty h3 { font-size: 18px; }
