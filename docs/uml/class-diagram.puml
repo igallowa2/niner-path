@@ -1,0 +1,97 @@
+@startuml
+title Niner Path Class Diagram
+
+skinparam classAttributeIconSize 0
+
+package "Prisma persistence models" {
+  class JobApplication <<model>> {
+    +id: String <<PK>> = cuid()
+    +company: String
+    +role: String
+    +location: String = ""
+    +jobType: String = "Internship"
+    +industry: String = ""
+    +deadline: String = ""
+    +status: String = "Saved"
+    +postingUrl: String = ""
+    +createdAt: DateTime = now()
+    +updatedAt: DateTime <<@updatedAt>>
+  }
+
+  class StatusChange <<model>> {
+    +id: Int <<PK>> = autoincrement()
+    +status: String
+    +date: String
+    +applicationId: String <<FK, indexed>>
+  }
+
+  JobApplication "1" *-- "0..*" StatusChange : timeline
+  note on link
+    onDelete: Cascade
+  end note
+}
+
+package "Application domain types" {
+  class Application <<interface>> {
+    +id: string
+    +company: string
+    +role: string
+    +location: string
+    +jobType: JobType
+    +industry: string
+    +deadline: string
+    +status: Status
+    +postingUrl: string
+    +timeline: TimelineEntry[]
+  }
+
+  class TimelineEntry <<interface>> {
+    +status: Status
+    +date: string
+  }
+
+  class ApplicationInput <<type>> {
+    +company: string
+    +role: string
+    +location: string
+    +jobType: JobType
+    +industry: string
+    +deadline: string
+    +status: Status
+    +postingUrl: string
+  }
+
+  Application "1" *-- "0..*" TimelineEntry : timeline
+  ApplicationInput ..> Application : Omit<"id", "timeline">
+}
+
+package "Server data-access layer" {
+  class ApplicationRepository <<repository>> {
+    +listApplications(): Promise<Application[]>
+    +createApplication(input: ApplicationInput): Promise<Application>
+    +updateApplicationStatus(id: string, status: unknown): Promise<Application>
+    +toApplicationInput(body: unknown): ApplicationInput
+  }
+
+  class ValidationError <<Error>> {
+    +errors: FormErrors & { status?: string; jobType?: string }
+  }
+
+  class NotFoundError <<Error>>
+
+  ApplicationRepository ..> JobApplication : Prisma queries
+  ApplicationRepository ..> StatusChange : creates timeline entries
+  ApplicationRepository ..> Application : maps rows
+  ApplicationRepository ..> ApplicationInput
+  ApplicationRepository ..> ValidationError : throws
+  ApplicationRepository ..> NotFoundError : throws
+}
+
+note "SQLite stores status and jobType as String.\nRepository validation restricts them to STATUSES and JOB_TYPES." as N1
+N1 .. JobApplication
+
+note "String date values use YYYY-MM-DD,\nor an empty string when no deadline exists." as N2
+N2 .. JobApplication
+N2 .. TimelineEntry
+
+@enduml

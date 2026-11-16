@@ -1,0 +1,107 @@
+@startuml
+title Save/Load Job Applications Persistently in the Database
+
+autonumber
+
+actor Student
+participant "Frontend UI\n(React / JobTracker)" as UI
+participant "REST API\n(Express server/app.ts)" as API
+participant "Data Access Layer\n(applicationRepository / Prisma)" as DAL
+database "SQLite Database" as DB
+
+note over UI,DB
+The API-backed sequence below reflects the endpoints and repository calls
+implemented in server/app.ts and server/applicationRepository.ts.
+The current JobTracker implementation still uses src/lib/storage.ts
+(localStorage) and must call these endpoints to use SQLite persistence.
+end note
+
+== Create and save an application ==
+
+Student -> UI: Enter application details\nand select "Save application"
+UI -> UI: Validate form fields\n(validateApplication)
+
+alt Client-side validation fails
+  UI --> Student: Display field errors\n(no request sent)
+else Input is valid
+  UI -> API: POST /api/applications\nJSON ApplicationInput
+  activate API
+  API -> DAL: toApplicationInput(req.body)
+  DAL --> API: Normalized ApplicationInput
+  API -> DAL: createApplication(input)
+  activate DAL
+  DAL -> DAL: Validate status and jobType\nand validateApplication(input)
+
+  alt Repository validation fails
+    DAL --> API: throw ValidationError
+    deactivate DAL
+    API --> UI: 400 { errors }
+    deactivate API
+    UI --> Student: Display validation errors
+  else Input is valid
+    DAL -> DB: INSERT JobApplication\nand related StatusChange
+    activate DB
+
+    alt Database write fails
+      DB --> DAL: Database error
+      deactivate DB
+      DAL --> API: Propagate error
+      deactivate DAL
+      API -> API: Log error
+      API --> UI: 500 { error }
+      deactivate API
+      UI --> Student: Display save failure
+    else Write succeeds
+      DB --> DAL: Created row with timeline\n(include ordered by id)
+      deactivate DB
+      DAL -> DAL: Map row to Application
+      DAL --> API: Application
+      deactivate DAL
+      API --> UI: 201 Created\nApplication JSON
+      deactivate API
+      UI --> Student: Show saved application\nand success message
+    end
+  end
+end
+
+== Load applications ==
+
+Student -> UI: Open or refresh Job Tracker
+UI -> API: GET /api/applications
+activate API
+API -> DAL: listApplications()
+activate DAL
+DAL -> DB: SELECT JobApplication rows\ninclude StatusChange timeline\norder by createdAt DESC
+activate DB
+
+alt Database read fails
+  DB --> DAL: Database error
+  deactivate DB
+  DAL --> API: Propagate error
+  deactivate DAL
+  API -> API: Log error
+  API --> UI: 500 { error }
+  deactivate API
+  UI --> Student: Display load failure
+else Read succeeds
+  DB --> DAL: Rows with timelines
+  deactivate DB
+  DAL -> DAL: Map each row to Application
+  DAL --> API: Application[]
+  deactivate DAL
+  API --> UI: 200 OK\nApplication[] JSON
+  deactivate API
+  UI --> Student: Render application list
+end
+
+== API error handling ==
+
+note over API
+Express error middleware maps:
+- ValidationError -> 400 { errors }
+- NotFoundError -> 404 { error }
+- Invalid JSON SyntaxError -> 400
+- Other errors -> 500 { error } and console.error
+end note
+
+@enduml
