@@ -5,6 +5,7 @@ import { afterAll, describe, expect, it } from 'vitest'
 import type { ApplicationInput } from '../src/types'
 import {
   createApplication,
+  deleteApplication,
   listApplications,
   NotFoundError,
   toApplicationInput,
@@ -74,5 +75,18 @@ describe('application repository', () => {
 
   it('returns NotFoundError for an id that does not exist', async () => {
     await expect(updateApplicationStatus('does-not-exist', 'Applied')).rejects.toBeInstanceOf(NotFoundError)
+  })
+
+  it('deletes an application and its timeline', async () => {
+    const created = await createApplication({ ...valid, company: 'TEST-Delete Co' })
+    await updateApplicationStatus(created.id, 'Applied')
+    await deleteApplication(created.id)
+
+    expect(await prisma.jobApplication.findUnique({ where: { id: created.id } })).toBeNull()
+    expect(await prisma.statusChange.count({ where: { applicationId: created.id } })).toBe(0)
+  })
+
+  it('returns NotFoundError when deleting an id that does not exist', async () => {
+    await expect(deleteApplication('does-not-exist')).rejects.toBeInstanceOf(NotFoundError)
   })
 })

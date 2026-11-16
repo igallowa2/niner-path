@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { JOB_TYPES, STATUSES, type ApplicationInput, type JobType, type Status } from '../types'
 import { validateApplication, type FormErrors } from '../lib/validation'
+import { ApiRequestError } from '../lib/storage'
 
 const EMPTY: ApplicationInput = {
   company: '',
@@ -14,13 +15,16 @@ const EMPTY: ApplicationInput = {
 }
 
 interface Props {
-  onSave: (input: ApplicationInput) => void
+  /** Saves to the server. Throws if saving fails, so the form can show why. */
+  onSave: (input: ApplicationInput) => Promise<void>
   onCancel: () => void
 }
 
 export function AddApplicationForm({ onSave, onCancel }: Props) {
   const [values, setValues] = useState<ApplicationInput>(EMPTY)
   const [errors, setErrors] = useState<FormErrors>({})
+  const [formError, setFormError] = useState('') // problems not tied to one field, e.g. server down
+  const [saving, setSaving] = useState(false)
 
   function update<K extends keyof ApplicationInput>(key: K, value: ApplicationInput[K]) {
     setValues((v) => ({ ...v, [key]: value }))
@@ -28,19 +32,30 @@ export function AddApplicationForm({ onSave, onCancel }: Props) {
     if (errors[key]) setErrors((e) => ({ ...e, [key]: undefined }))
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault()
+    if (saving) return // ignore double clicks while a save is in progress
     const found = validateApplication(values)
     setErrors(found)
+    setFormError('')
     if (Object.keys(found).length > 0) return
-    onSave({
-      ...values,
-      company: values.company.trim(),
-      role: values.role.trim(),
-      location: values.location.trim(),
-      industry: values.industry.trim(),
-      postingUrl: values.postingUrl.trim(),
-    })
+
+    setSaving(true)
+    try {
+      await onSave({
+        ...values,
+        company: values.company.trim(),
+        role: values.role.trim(),
+        location: values.location.trim(),
+        industry: values.industry.trim(),
+        postingUrl: values.postingUrl.trim(),
+      })
+      // On success the parent closes this form.
+    } catch (err) {
+      if (err instanceof ApiRequestError && err.fieldErrors) setErrors(err.fieldErrors)
+      else setFormError(err instanceof Error ? err.message : 'Could not save. Please try again.')
+      setSaving(false)
+    }
   }
 
   return (
@@ -75,12 +90,12 @@ export function AddApplicationForm({ onSave, onCancel }: Props) {
         </div>
 
         <div className="row">
-          <Field label="Job type" id="jobType">
+          <Field label="Job type" id="jobType" error={errors.jobType}>
             <select id="jobType" value={values.jobType} onChange={(e) => update('jobType', e.target.value as JobType)}>
               {JOB_TYPES.map((t) => <option key={t}>{t}</option>)}
             </select>
           </Field>
-          <Field label="Status" id="status">
+          <Field label="Status" id="status" error={errors.status}>
             <select id="status" value={values.status} onChange={(e) => update('status', e.target.value as Status)}>
               {STATUSES.map((s) => <option key={s}>{s}</option>)}
             </select>
@@ -96,9 +111,11 @@ export function AddApplicationForm({ onSave, onCancel }: Props) {
           </Field>
         </div>
 
+        {formError && <p className="error" role="alert">{formError}</p>}
+
         <div className="actions">
           <button type="button" className="btn ghost" onClick={onCancel}>Cancel</button>
-          <button type="submit" className="btn primary">Save application</button>
+          <button type="submit" className="btn primary" disabled={saving}>{saving ? 'Saving…' : 'Save application'}</button>
         </div>
       </form>
     </div>

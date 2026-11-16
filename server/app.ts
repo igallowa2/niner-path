@@ -1,6 +1,7 @@
 import express, { type NextFunction, type Request, type Response } from 'express'
 import {
   createApplication,
+  deleteApplication,
   listApplications,
   NotFoundError,
   toApplicationInput,
@@ -24,6 +25,12 @@ export function createApp() {
 
   app.patch('/api/applications/:id/status', async (req, res) => {
     res.json(await updateApplicationStatus(req.params.id, req.body?.status))
+  })
+
+  // 204 No Content = deleted. 404 if the id does not exist.
+  app.delete('/api/applications/:id', async (req, res) => {
+    await deleteApplication(req.params.id)
+    res.status(204).end()
   })
 
   app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
