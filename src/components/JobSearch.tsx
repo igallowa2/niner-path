@@ -1,83 +1,155 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react'
 import type { JobListing } from '../../shared/api'
+import { SAMPLE_AS_OF, sampleOpportunities } from '../data/sampleJobs'
 import { friendlyMessage, searchJobs } from '../lib/api'
-import { formatSalary, jobToApplication } from '../lib/jobs'
+import {
+  applyView,
+  BOOKMARKS_KEY,
+  closingSoon,
+  deadlineRange,
+  DEFAULT_FILTER_PREFS,
+  FILTER_PREFS_KEY,
+  filtersNotAppliedToLive,
+  isFilterPrefs,
+  isStringArray,
+  liveJobHasFilter,
+  matchesSearch,
+  opportunityHasFilter,
+  passesFilters,
+  readStored,
+  resultsSummary,
+  strongMatchCount,
+  wantsRemote,
+  writeStored,
+  type FilterGroupId,
+  type FilterId,
+  type FilterPrefs,
+  type SearchQuery,
+  type View,
+} from '../lib/findJobs'
+import { jobToApplication } from '../lib/jobs'
+import { getProfile, profileSummary } from '../lib/profile'
 import { appendApplication, loadApplications } from '../lib/storage'
+import { AppHeader } from './AppHeader'
+import { FiltersPanel } from './find-jobs/FiltersPanel'
+import { LiveJobCard, OpportunityCard } from './find-jobs/JobCards'
+import { LiveJobDetail, OpportunityDetail } from './find-jobs/JobDetail'
+import { ChevronRightIcon, ClockIcon, PinIcon, SearchIcon, SparkIcon, TargetIcon } from './icons'
+import './FindJobs.css'
 
 interface Props {
   /** Pre-filled keyword (e.g. a career picked on Explore Careers). */
   initialWhat?: string
-  /** Run the search right away (used when arriving from Explore Careers). */
+  /** Run the live search right away (used when arriving from Explore Careers). */
   autoSearch?: boolean
 }
 
-type State =
+type LiveState =
   | { kind: 'idle' }
   | { kind: 'loading' }
   | { kind: 'error'; message: string }
   | { kind: 'done'; jobs: JobListing[]; total: number; what: string; where: string }
 
-function formatPosted(iso: string): string {
-  const d = new Date(iso)
-  return Number.isNaN(d.getTime()) ? '' : `Posted ${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`
-}
+type Selection = { kind: 'sample' | 'live'; id: string } | null
 
 export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
-  const [what, setWhat] = useState(initialWhat)
-  const [where, setWhere] = useState('Charlotte, NC')
-  const [state, setState] = useState<State>({ kind: 'idle' })
-  // Posting links already in the tracker, so we can show "In tracker" instead of saving twice.
-  const [savedUrls, setSavedUrls] = useState<Set<string>>(() => new Set())
+  const profile = getProfile()
+
+  // What's typed in the boxes vs. the search that was actually run (on Search / Enter).
+  const [draft, setDraft] = useState<SearchQuery>({ text: initialWhat, location: '' })
+  const [query, setQuery] = useState<SearchQuery>({ text: initialWhat, location: '' })
+  const [prefs, setPrefs] = useState<FilterPrefs>(() => readStored(FILTER_PREFS_KEY, DEFAULT_FILTER_PREFS, isFilterPrefs))
+  const [view, setView] = useState<View>('best')
+  const [bookmarks, setBookmarks] = useState<Set<string>>(() => new Set(readStored(BOOKMARKS_KEY, [], isStringArray)))
+  const [selection, setSelection] = useState<Selection>(null)
+
+  const [live, setLive] = useState<LiveState>({ kind: 'idle' })
+  const latestRequest = useRef(0) // ignore replies from older live searches
+  const [trackedUrls, setTrackedUrls] = useState<Set<string>>(() => new Set())
   const [savingId, setSavingId] = useState<string | null>(null)
   const [saveError, setSaveError] = useState('')
-  // Ignore replies from older searches if the student searched again in the meantime.
-  const latestRequest = useRef(0)
+  const detailRef = useRef<HTMLDivElement>(null)
 
-  async function runSearch(searchWhat: string, searchWhere: string) {
-    const w = searchWhat.trim()
-    if (!w) {
-      setState({ kind: 'error', message: 'Enter a job title or keyword to search.' })
-      return
-    }
-    const id = ++latestRequest.current
-    setState({ kind: 'loading' })
-    try {
-      const result = await searchJobs(w, searchWhere.trim())
-      if (id === latestRequest.current) {
-        setState({ kind: 'done', jobs: result.jobs, total: result.total, what: w, where: searchWhere.trim() })
-      }
-    } catch (err) {
-      if (id === latestRequest.current) setState({ kind: 'error', message: friendlyMessage(err) })
-    }
-  }
+  // Remember filter choices and bookmarks between visits.
+  useEffect(() => writeStored(FILTER_PREFS_KEY, prefs), [prefs])
+  useEffect(() => writeStored(BOOKMARKS_KEY, [...bookmarks]), [bookmarks])
 
-  // Ask the database which postings are already tracked. If that fails, saving still works;
-  // the Job Tracker page shows the connection error.
+  // Which live postings are already in the Job Tracker (so we can show "In tracker ✓").
   useEffect(() => {
     let ignore = false
     loadApplications()
-      .then((list) => { if (!ignore) setSavedUrls(new Set(list.map((a) => a.postingUrl).filter(Boolean))) })
-      .catch(() => {})
+      .then((list) => { if (!ignore) setTrackedUrls(new Set(list.map((a) => a.postingUrl).filter(Boolean))) })
+      .catch(() => {}) // The Job Tracker page shows connection errors; saving still works here.
     return () => { ignore = true }
   }, [])
 
+  async function runLiveSearch(q: SearchQuery) {
+    const text = q.text.trim()
+    if (!text) {
+      setLive({ kind: 'idle' })
+      return
+    }
+    // Adzuna has no "remote" location, so search for remote jobs anywhere instead.
+    const remote = wantsRemote(q.location)
+    const what = remote ? `${text} remote` : text
+    const where = remote ? '' : q.location.trim()
+    const id = ++latestRequest.current
+    setLive({ kind: 'loading' })
+    try {
+      const result = await searchJobs(what, where)
+      if (id === latestRequest.current) setLive({ kind: 'done', jobs: result.jobs, total: result.total, what: text, where: q.location.trim() })
+    } catch (err) {
+      if (id === latestRequest.current) setLive({ kind: 'error', message: friendlyMessage(err) })
+    }
+  }
+
   useEffect(() => {
-    if (autoSearch && initialWhat) void runSearch(initialWhat, where)
+    if (autoSearch && initialWhat) void runLiveSearch({ text: initialWhat, location: '' })
     // Only on first render: later searches come from the form.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  function handleSubmit(e: FormEvent) {
+  function handleSearch(e: FormEvent) {
     e.preventDefault()
-    void runSearch(what, where)
+    setQuery(draft)
+    void runLiveSearch(draft)
   }
 
-  async function saveJob(job: JobListing) {
+  function toggleFilter(f: FilterId) {
+    setPrefs((p) => ({ ...p, selected: p.selected.includes(f) ? p.selected.filter((x) => x !== f) : [...p.selected, f] }))
+  }
+
+  function clearEverything() {
+    setPrefs((p) => ({ ...p, selected: [] }))
+    setView('best')
+    setQuery({ text: '', location: '' })
+    setDraft({ text: '', location: '' })
+  }
+
+  function toggleBookmark(id: string) {
+    setBookmarks((b) => {
+      const next = new Set(b)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
+
+  function select(next: Selection) {
+    setSelection(next)
+    setSaveError('')
+    // On narrow screens the detail panel is below the list, so bring it into view.
+    if (typeof window.matchMedia === 'function' && window.matchMedia('(max-width: 1099px)').matches) {
+      detailRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
+  async function saveLiveJob(job: JobListing) {
     setSaveError('')
     setSavingId(job.id)
     try {
       await appendApplication(jobToApplication(job))
-      setSavedUrls((s) => new Set(s).add(job.url))
+      setTrackedUrls((s) => new Set(s).add(job.url))
     } catch (err) {
       setSaveError(`Couldn't save "${job.title}" to your tracker. ${err instanceof Error ? err.message : ''}`.trim())
     } finally {
@@ -85,82 +157,166 @@ export function JobSearch({ initialWhat = '', autoSearch = false }: Props) {
     }
   }
 
+  // ----- What to show -----
+  const visible = applyView(
+    sampleOpportunities.filter((o) => matchesSearch(o, query) && passesFilters(o, prefs.selected, opportunityHasFilter)),
+    view,
+  )
+  const liveJobs = live.kind === 'done' ? live.jobs.filter((j) => passesFilters(j, prefs.selected, liveJobHasFilter)) : []
+  const liveSkipped = filtersNotAppliedToLive(prefs.selected)
+
+  // Keep the selection if it's still visible; otherwise fall back to the first result.
+  const selectedSample = selection?.kind === 'sample' ? visible.find((o) => o.id === selection.id) : undefined
+  const selectedLive = selection?.kind === 'live' ? liveJobs.find((j) => j.id === selection.id) : undefined
+  const shownSample = selectedLive ? undefined : selectedSample ?? visible[0]
+  const shownLive = selectedLive ?? (shownSample ? undefined : liveJobs[0])
+
+  const closing = closingSoon(sampleOpportunities, SAMPLE_AS_OF)
+  const strong = strongMatchCount(sampleOpportunities)
+
+  function quickLink(target: View) {
+    setView((v) => (v === target ? 'best' : target)) // clicking the active one goes back to Best match
+  }
+
   return (
-    <section className="tracker" aria-labelledby="find-jobs-title">
-      <header className="tracker-header">
-        <div>
-          <h1 id="find-jobs-title">Find Jobs</h1>
-          <p className="muted">Search real job listings and save the ones you like to your tracker.</p>
-        </div>
+    <section className="fj-page" aria-labelledby="find-jobs-title">
+      <AppHeader />
+
+      <header className="fj-heading">
+        <h1 id="find-jobs-title">Find Jobs</h1>
+        <p className="muted">{profileSummary(profile)}</p>
       </header>
 
-      <form className="search-form" role="search" onSubmit={handleSubmit} noValidate>
-        <div className="field">
-          <label htmlFor="job-what">Job title or keyword</label>
-          <input id="job-what" value={what} maxLength={100} onChange={(e) => setWhat(e.target.value)} placeholder="e.g. data analyst intern" />
+      <form className="fj-search" role="search" onSubmit={handleSearch} noValidate>
+        <div className="fj-inputs">
+          <label className="fj-input">
+            <SearchIcon />
+            <span className="sr-only">Job title, company or keyword</span>
+            <input
+              value={draft.text}
+              maxLength={100}
+              onChange={(e) => setDraft((d) => ({ ...d, text: e.target.value }))}
+              placeholder="Job title, company or keyword"
+            />
+          </label>
+          <label className="fj-input">
+            <PinIcon />
+            <span className="sr-only">City or remote</span>
+            <input
+              value={draft.location}
+              maxLength={100}
+              onChange={(e) => setDraft((d) => ({ ...d, location: e.target.value }))}
+              placeholder="City or remote"
+            />
+          </label>
         </div>
-        <div className="field">
-          <label htmlFor="job-where">Location</label>
-          <input id="job-where" value={where} maxLength={100} onChange={(e) => setWhere(e.target.value)} placeholder="City, State (blank = anywhere)" />
-        </div>
-        <button type="submit" className="btn primary" disabled={state.kind === 'loading'}>
-          {state.kind === 'loading' ? 'Searching…' : 'Search jobs'}
+        <button type="submit" className="btn primary fj-search-btn" disabled={live.kind === 'loading'}>
+          {live.kind === 'loading' ? 'Searching…' : 'Search'}
         </button>
       </form>
 
-      {state.kind === 'loading' && <p className="muted" role="status">Searching for jobs…</p>}
-      {state.kind === 'error' && <p className="alert" role="alert">{state.message}</p>}
-      {saveError && <p className="alert" role="alert">{saveError}</p>}
+      <FiltersPanel
+        prefs={prefs}
+        onToggleFilter={toggleFilter}
+        onClearAll={() => setPrefs((p) => ({ ...p, selected: [] }))}
+        onToggleOpen={() => setPrefs((p) => ({ ...p, open: !p.open }))}
+        onToggleGroup={(g: FilterGroupId) => setPrefs((p) => ({ ...p, groupsOpen: { ...p.groupsOpen, [g]: !p.groupsOpen[g] } }))}
+      />
 
-      {state.kind === 'done' && state.jobs.length === 0 && (
-        <div className="empty">
-          <h2>No jobs found</h2>
-          <p className="muted">
-            Nothing matched “{state.what}”{state.where ? ` near ${state.where}` : ''}. Try a broader keyword or clear the location.
-          </p>
+      <nav className="fj-quick" aria-label="Quick views">
+        <QuickLink icon={<TargetIcon />} title="Top matches for you" subtitle={`${strong} strong matches · Based on your skills`} active={view === 'top'} onClick={() => quickLink('top')} />
+        <QuickLink icon={<ClockIcon />} title="Closing this week" subtitle={`${closing.length} deadlines · ${deadlineRange(closing)}`} active={view === 'closing'} onClick={() => quickLink('closing')} />
+        <QuickLink icon={<SparkIcon />} title={`Because you saved ${profile.recentlySavedCompany}`} subtitle="Explore finance & research roles" active={view === 'saved-company'} onClick={() => quickLink('saved-company')} />
+      </nav>
+
+      <div className="fj-layout">
+        <div className="fj-results">
+          <section aria-labelledby="fj-opps-title">
+            <h2 className="fj-h2" id="fj-opps-title">Opportunities for you</h2>
+            <p className="muted small fj-subtitle" aria-live="polite">{resultsSummary(visible.length, prefs.selected, view)}</p>
+
+            {visible.length === 0 ? (
+              <div className="fj-empty">
+                <h3>No openings match</h3>
+                <p className="muted">Try a broader keyword, a different location, or fewer filters.</p>
+                <button type="button" className="btn primary" onClick={clearEverything}>Clear filters</button>
+              </div>
+            ) : (
+              <ul className="fj-list">
+                {visible.map((job) => (
+                  <OpportunityCard
+                    key={job.id}
+                    job={job}
+                    selected={shownSample?.id === job.id}
+                    bookmarked={bookmarks.has(job.id)}
+                    onSelect={() => select({ kind: 'sample', id: job.id })}
+                    onToggleBookmark={() => toggleBookmark(job.id)}
+                  />
+                ))}
+              </ul>
+            )}
+          </section>
+
+          <section className="fj-live" aria-labelledby="fj-live-title">
+            <h2 className="fj-h2" id="fj-live-title">Live listings</h2>
+            {live.kind === 'idle' && <p className="muted small fj-subtitle">Search above to see real openings from Adzuna.</p>}
+            {live.kind === 'loading' && <p className="muted small fj-subtitle" role="status">Searching live listings…</p>}
+            {live.kind === 'error' && <p className="alert" role="alert">{live.message}</p>}
+            {live.kind === 'done' && (
+              <>
+                <p className="muted small fj-subtitle" role="status">
+                  Showing {liveJobs.length} of {live.total.toLocaleString('en-US')} for “{live.what}”{live.where ? ` near ${live.where}` : ''}
+                  {liveSkipped.length > 0 && ` · ${liveSkipped.join(', ')} can't be checked for live listings`}
+                </p>
+                {liveJobs.length === 0 ? (
+                  <p className="muted fj-empty-inline">No live listings match. Try a broader keyword or fewer filters.</p>
+                ) : (
+                  <ul className="fj-list">
+                    {liveJobs.map((job) => (
+                      <LiveJobCard
+                        key={job.id}
+                        job={job}
+                        selected={shownLive?.id === job.id}
+                        inTracker={!!job.url && trackedUrls.has(job.url)}
+                        onSelect={() => select({ kind: 'live', id: job.id })}
+                      />
+                    ))}
+                  </ul>
+                )}
+              </>
+            )}
+            <p className="attribution">
+              Jobs by <a href="https://www.adzuna.com" target="_blank" rel="noopener noreferrer">Adzuna</a>
+            </p>
+          </section>
         </div>
-      )}
 
-      {state.kind === 'done' && state.jobs.length > 0 && (
-        <>
-          <p className="muted small results-count" role="status">
-            Showing {state.jobs.length} of {state.total.toLocaleString('en-US')} jobs for “{state.what}”
-            {state.where ? ` near ${state.where}` : ''}
-          </p>
-          <div className="list">
-            {state.jobs.map((job) => {
-              const salary = formatSalary(job.salaryMin, job.salaryMax)
-              const meta = [job.location, salary, formatPosted(job.created)].filter(Boolean).join(' · ')
-              const inTracker = !!job.url && savedUrls.has(job.url)
-              return (
-                <article className="card" key={job.id} aria-label={`${job.company}, ${job.title}`}>
-                  <div className="card-body">
-                    <p className="company">{job.company}</p>
-                    <h3 className="role">{job.title}</h3>
-                    {meta && <p className="muted small">{meta}</p>}
-                    {job.snippet && <p className="snippet">{job.snippet}</p>}
-                  </div>
-                  <div className="card-side">
-                    <button type="button" className="btn primary small-btn" onClick={() => saveJob(job)} disabled={inTracker || savingId === job.id}>
-                      {inTracker ? 'In tracker ✓' : savingId === job.id ? 'Saving…' : 'Save to tracker'}
-                    </button>
-                    {job.url && (
-                      <a className="link" href={job.url} target="_blank" rel="noopener noreferrer">
-                        View posting<span className="sr-only"> for {job.title} (opens in a new tab)</span>
-                      </a>
-                    )}
-                  </div>
-                </article>
-              )
-            })}
-          </div>
-        </>
-      )}
-
-      <p className="attribution">
-        Jobs by{' '}
-        <a href="https://www.adzuna.com" target="_blank" rel="noopener noreferrer">Adzuna</a>
-      </p>
+        <div className="fj-detail-col" ref={detailRef}>
+          {shownSample && <OpportunityDetail job={shownSample} asOf={SAMPLE_AS_OF} />}
+          {shownLive && (
+            <LiveJobDetail
+              job={shownLive}
+              inTracker={!!shownLive.url && trackedUrls.has(shownLive.url)}
+              saving={savingId === shownLive.id}
+              saveError={saveError}
+              onSave={() => void saveLiveJob(shownLive)}
+            />
+          )}
+        </div>
+      </div>
     </section>
+  )
+}
+
+function QuickLink({ icon, title, subtitle, active, onClick }: { icon: ReactNode; title: string; subtitle: string; active: boolean; onClick: () => void }) {
+  return (
+    <button type="button" className={`fj-quick-card${active ? ' active' : ''}`} aria-pressed={active} onClick={onClick}>
+      <span className="fj-quick-icon" aria-hidden="true">{icon}</span>
+      <span className="fj-quick-text">
+        <span className="fj-quick-title">{title}</span>
+        <span className="fj-meta">{subtitle}</span>
+      </span>
+      <ChevronRightIcon />
+    </button>
   )
 }
