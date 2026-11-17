@@ -99,6 +99,12 @@ export async function createApplication(input: ApplicationInput): Promise<Applic
   return toApplication(row)
 }
 
+/** Deletes an application. Its timeline rows are removed too (ON DELETE CASCADE in the migration). */
+export async function deleteApplication(id: string): Promise<void> {
+  const { count } = await prisma.jobApplication.deleteMany({ where: { id } })
+  if (count === 0) throw new NotFoundError(id)
+}
+
 /** Changes an application's status and records the change in its timeline. */
 export async function updateApplicationStatus(id: string, status: unknown): Promise<Application> {
   if (!isStatus(status)) throw new ValidationError({ status: 'Status must be one of: ' + STATUSES.join(', ') })
