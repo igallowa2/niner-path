@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Dashboard } from './components/Dashboard'
 import { JobTracker } from './components/JobTracker'
+import { CoursePlanner } from './components/CoursePlanner'
 import { MyDegree } from './components/MyDegree'
 
 export default function App() {
@@ -15,7 +16,8 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
 
-  const page = route === '#/degree' ? <MyDegree /> : route === '#/jobs' ? <JobTracker /> : <Dashboard />
+  const page =
+    route === '#/degree' ? <MyDegree /> : route === '#/planner' ? <CoursePlanner /> : route === '#/jobs' ? <JobTracker /> : <Dashboard />
 
   return (
     <div className="layout">
@@ -26,6 +28,7 @@ export default function App() {
           <a className={`nav-item${route === '#/dashboard' ? ' active' : ''}`} href="#/dashboard" aria-current={route === '#/dashboard' ? 'page' : undefined}>Dashboard</a>
           <p className="nav-group">Academics</p>
           <a className={`nav-item${route === '#/degree' ? ' active' : ''}`} href="#/degree" aria-current={route === '#/degree' ? 'page' : undefined}>My Degree</a>
+          <a className={`nav-item${route === '#/planner' ? ' active' : ''}`} href="#/planner" aria-current={route === '#/planner' ? 'page' : undefined}>Course Planner</a>
           <p className="nav-group">Career</p>
           <a className={`nav-item${route === '#/jobs' ? ' active' : ''}`} href="#/jobs" aria-current={route === '#/jobs' ? 'page' : undefined}>Job Tracker</a>
         </nav>
