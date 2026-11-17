@@ -37,3 +37,11 @@ dist-ssr
 *.db-journal
 *.sqlite
 *.sqlite3
+
+# Downloaded catalog pages (scripts/catalog)
+scripts/catalog/.cache/
+scripts/catalog/input/*.html
+scripts/catalog/input/*_files/
+
+# Catalog import cache (raw catalog pages)
+.catalog-cache/

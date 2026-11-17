@@ -37,3 +37,94 @@ model StatusChange {
 
   @@index([applicationId])
 }
+
+// ---------------------------------------------------------------------------
+// Course catalog: colleges, programs (majors, minors, ...), their requirements,
+// and courses. Filled from prisma/catalog.json, which `npm run catalog:import`
+// builds from the official UNC Charlotte catalog. See docs/catalog-import.md.
+// ---------------------------------------------------------------------------
+
+/// A UNC Charlotte college. Codes match the tabs in the "Catalog Widget API" sheet (CCI, BCOB, ...).
+model College {
+  code      String    @id
+  name      String
+  catalogId Int? // the college's page id in the catalog
+  programs  Program[]
+}
+
+/// One major, minor, certificate, honors, or early entry program in one catalog year.
+model Program {
+  id           Int                @id @default(autoincrement())
+  catalogId    Int // "poid" in the catalog page address
+  catalogYear  String // e.g. "2026-2027"
+  name         String
+  type         String // one of PROGRAM_TYPES (src/types.ts)
+  degree       String             @default("") // "B.S.", "B.A.", ... ("" for minors and certificates)
+  totalCredits Int?
+  catalogUrl   String             @default("") // official page, so students can double-check
+  collegeCode  String?
+  college      College?           @relation(fields: [collegeCode], references: [code])
+  groups       RequirementGroup[]
+
+  @@unique([catalogId, catalogYear])
+  @@index([collegeCode])
+  @@index([type])
+}
+
+/// One course from the catalog, shared by every program that lists it.
+model Course {
+  code          String              @id // "ITSC 3155"
+  catalogId     Int? // "coid" in the catalog page address
+  prefix        String // "ITSC"
+  number        String // "3155"
+  title         String
+  minCredits    Float?
+  maxCredits    Float? // same as minCredits unless the course is variable credit
+  creditsText   String              @default("") // as written, e.g. "1-3"
+  description   String              @default("")
+  prerequisites String              @default("") // as written in the catalog
+  corequisites  String              @default("")
+  restrictions  String              @default("")
+  usedIn        RequirementCourse[]
+
+  @@index([prefix])
+}
+
+/// A block of requirements inside a program, e.g. "Core Courses" or "Capstone Course".
+/// Groups can be nested: "Elective Concentration Courses" > "Software Design Courses".
+model RequirementGroup {
+  id            Int                 @id @default(autoincrement())
+  programId     Int
+  program       Program             @relation(fields: [programId], references: [id], onDelete: Cascade)
+  parentId      Int?
+  parent        RequirementGroup?   @relation("Subgroups", fields: [parentId], references: [id], onDelete: Cascade)
+  children      RequirementGroup[]  @relation("Subgroups")
+  label         String
+  level         Int // heading level on the catalog page (2 = top)
+  sortOrder     Int // order on the catalog page
+  rule          String // one of REQUIREMENT_RULES: ALL, CHOOSE, OPEN
+  chooseCount   Int? // CHOOSE: number of courses to pick ("Select one" = 1)
+  chooseCredits Float? // CHOOSE or OPEN: credit hours to pick ("Select 15 credit hours" = 15)
+  minCredits    Float? // from the heading, e.g. "Core Courses (29 credit hours)"
+  maxCredits    Float?
+  notes         String              @default("") // the catalog's instructions for this group
+  courses       RequirementCourse[]
+
+  @@index([programId])
+  @@index([parentId])
+}
+
+/// A course listed in a requirement group. Courses with the same slot are alternatives
+/// ("ITSC 1600 or ITSC 2600"): the student takes one of them.
+model RequirementCourse {
+  id         Int              @id @default(autoincrement())
+  groupId    Int
+  group      RequirementGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  courseCode String
+  course     Course           @relation(fields: [courseCode], references: [code])
+  slot       Int
+  note       String           @default("") // e.g. "fulfills Quantitative/Data requirement"
+
+  @@index([groupId])
+  @@index([courseCode])
+}

@@ -1,0 +1,15 @@
+{
+  "_note": "Hand-edited sample. There is no public API for course offerings, so update this from the Banner schedule each term. Terms not listed here are treated as 'unknown' (nothing is filtered).",
+  "terms": [
+    {
+      "term": "Spring 2027",
+      "note": "Sample entries only. Replace with the real Spring 2027 schedule.",
+      "courses": ["ECON 2101", "ECON 2102", "ECON 3112", "ECON 3113", "STAT 1220", "STAT 1221"]
+    },
+    {
+      "term": "Summer 2027",
+      "note": "Sample entries only.",
+      "courses": ["ECON 2101", "ECON 2102", "STAT 1220"]
+    }
+  ]
+}

@@ -3,12 +3,19 @@ import { CareerExplorer } from './components/CareerExplorer'
 import { Dashboard } from './components/Dashboard'
 import { JobSearch } from './components/JobSearch'
 import { JobTracker } from './components/JobTracker'
+import { CoursePlanner } from './components/CoursePlanner'
 import { MyDegree } from './components/MyDegree'
 import { toJobKeyword } from './lib/jobs'
 
 const NAV = [
   { group: 'Overview', items: [{ hash: '#/dashboard', label: 'Dashboard' }] },
-  { group: 'Academics', items: [{ hash: '#/degree', label: 'My Degree' }] },
+  {
+    group: 'Academics',
+    items: [
+      { hash: '#/degree', label: 'My Degree' },
+      { hash: '#/planner', label: 'Course Planner' },
+    ],
+  },
   {
     group: 'Career',
     items: [
@@ -40,6 +47,7 @@ export default function App() {
 
   let page
   if (route === '#/degree') page = <MyDegree />
+  else if (route === '#/planner') page = <CoursePlanner />
   else if (route === '#/jobs') page = <JobTracker />
   else if (route === '#/find-jobs') page = <JobSearch key={jobSearch.n} initialWhat={jobSearch.what} autoSearch={jobSearch.auto} />
   else if (route === '#/careers') page = <CareerExplorer onFindJobs={findJobsFor} />

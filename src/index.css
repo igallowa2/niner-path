@@ -87,6 +87,40 @@ h1, h2, h3, p { margin: 0; }
 .actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
+/* My Degree + Course Planner */
+.degree-page { display: grid; gap: 20px; }
+.degree-note { background: #f6f0e2; border: 1px solid #e9dfc6; border-radius: 8px; padding: 10px 14px; font-size: 14px; }
+.degree-summary { max-width: none; }
+.degree-req-count { margin-top: 10px; }
+.degree-block { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 12px; }
+.degree-block h2 { font-size: 18px; font-weight: 600; }
+.degree-block-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.req-list, .my-courses { list-style: none; margin: 0; padding: 0; display: grid; }
+.req-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+.req-label { font-weight: 600; }
+.badge.req-done { background: #e1f1e6; color: #1f6b3a; }
+.badge.req-in-progress { background: #e3ecf7; color: #1d4f91; }
+.badge.req-needed { background: #f1efe7; color: #5a5a4f; }
+.badge.req-review { background: #fbf0d9; color: #7a5300; }
+.badge { white-space: nowrap; }
+.my-courses li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 0; border-top: 1px solid var(--line); }
+.my-course-name { flex: 1 1 220px; min-width: 0; }
+.link-btn { background: none; border: 0; padding: 0; font: inherit; font-size: 12px; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.link-btn:hover { color: var(--error); }
+.course-picker { position: relative; display: grid; gap: 6px; }
+.course-picker-row { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 10px; align-items: end; }
+.course-picker-list { position: absolute; z-index: 5; top: 100%; left: 0; right: 0; margin: 4px 0 0; padding: 4px; list-style: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(20, 30, 25, .12); max-height: 300px; overflow: auto; }
+.course-picker-list li { padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+.course-picker-list li.active { background: #e3e8df; }
+.degree-review summary { cursor: pointer; font-weight: 600; }
+.degree-review ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; }
+.planner-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 12px 20px; }
+.planner-controls .field { width: 200px; }
+.planner-controls .degree-program-field { width: min(100%, 440px); }
+.degree-catalog-link { color: var(--green); font-size: 14px; font-weight: 600; padding-bottom: 10px; }
+.skill-chips { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.skill-chips li { font-size: 12px; background: #e3e8df; border-radius: 999px; padding: 2px 10px; }
+
 /* Find Jobs + Explore Careers */
 .btn:disabled { opacity: .6; cursor: default; }
 .search-form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 12px; align-items: end; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
@@ -105,6 +139,7 @@ h1, h2, h3, p { margin: 0; }
 .attribution a { color: var(--green); }
 
 @media (max-width: 700px) {
+  .course-picker-row { grid-template-columns: 1fr; }
   .search-form { grid-template-columns: 1fr; }
   .search-form .field:only-of-type { grid-column: auto; }
   .career { flex-wrap: wrap; }

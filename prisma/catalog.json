@@ -1,0 +1,8144 @@
+{
+ "source": "https://catalog.charlotte.edu",
+ "catalogYear": "2026-2027",
+ "importedAt": "2026-11-17T14:22:08.556Z",
+ "note": "Partial import: Computer Science, Data Science, Economics, and Finance programs only. Course descriptions and prerequisites not included yet.",
+ "colleges": [
+  {
+   "code": "BCOB",
+   "name": "College of Business",
+   "catalogId": 13019
+  },
+  {
+   "code": "CCI",
+   "name": "College of Computing and Informatics",
+   "catalogId": 13020
+  }
+ ],
+ "courses": [
+  {
+   "code": "ACCT 3311",
+   "catalogId": 146637,
+   "prefix": "ACCT",
+   "number": "3311",
+   "title": "Intermediate Financial Accounting I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3312",
+   "catalogId": 146638,
+   "prefix": "ACCT",
+   "number": "3312",
+   "title": "Intermediate Financial Accounting II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3323",
+   "catalogId": 149811,
+   "prefix": "ACCT",
+   "number": "3323",
+   "title": "Intermediate Accounting I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3324",
+   "catalogId": 149812,
+   "prefix": "ACCT",
+   "number": "3324",
+   "title": "Intermediate Accounting II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3325",
+   "catalogId": 149813,
+   "prefix": "ACCT",
+   "number": "3325",
+   "title": "Intermediate Accounting III",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3330",
+   "catalogId": 146639,
+   "prefix": "ACCT",
+   "number": "3330",
+   "title": "Managerial Accounting and the Decision Process",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3350",
+   "catalogId": 149961,
+   "prefix": "ACCT",
+   "number": "3350",
+   "title": "Introduction to Auditing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 3380",
+   "catalogId": 146641,
+   "prefix": "ACCT",
+   "number": "3380",
+   "title": "Fraud Examination",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ACCT 4220",
+   "catalogId": 146645,
+   "prefix": "ACCT",
+   "number": "4220",
+   "title": "Income Tax",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 1101",
+   "catalogId": 146902,
+   "prefix": "BINF",
+   "number": "1101",
+   "title": "Introduction to Bioinformatics and Genomics",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 2111",
+   "catalogId": 146904,
+   "prefix": "BINF",
+   "number": "2111",
+   "title": "Introduction to Bioinformatics Computing",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 3101",
+   "catalogId": 146906,
+   "prefix": "BINF",
+   "number": "3101",
+   "title": "Sequence Analysis",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 3121",
+   "catalogId": 146905,
+   "prefix": "BINF",
+   "number": "3121",
+   "title": "Statistics for Bioinformatics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 3131",
+   "catalogId": 146907,
+   "prefix": "BINF",
+   "number": "3131",
+   "title": "Bioinformatics Algorithms",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 3201",
+   "catalogId": 146903,
+   "prefix": "BINF",
+   "number": "3201",
+   "title": "Genomic Methods",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 4171",
+   "catalogId": 146910,
+   "prefix": "BINF",
+   "number": "4171",
+   "title": "Business of Biotechnology",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 4191",
+   "catalogId": 146911,
+   "prefix": "BINF",
+   "number": "4191",
+   "title": "Life Sciences and the Law",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 4211",
+   "catalogId": 146912,
+   "prefix": "BINF",
+   "number": "4211",
+   "title": "Applied Data Mining for Bioinformatics",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 4600",
+   "catalogId": 146914,
+   "prefix": "BINF",
+   "number": "4600",
+   "title": "Bioinformatics and Genomics Seminar",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 4650",
+   "catalogId": 146913,
+   "prefix": "BINF",
+   "number": "4650",
+   "title": "Senior Project",
+   "minCredits": 1,
+   "maxCredits": 3,
+   "creditsText": "1 to 3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BINF 4900",
+   "catalogId": 149604,
+   "prefix": "BINF",
+   "number": "4900",
+   "title": "Principles of Team Science",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BIOL 2120",
+   "catalogId": 146920,
+   "prefix": "BIOL",
+   "number": "2120",
+   "title": "General Biology I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BIOL 2120L",
+   "catalogId": 150013,
+   "prefix": "BIOL",
+   "number": "2120L",
+   "title": "General Biology I Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BIOL 2130",
+   "catalogId": 146921,
+   "prefix": "BIOL",
+   "number": "2130",
+   "title": "General Biology II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BIOL 2130L",
+   "catalogId": 150014,
+   "prefix": "BIOL",
+   "number": "2130L",
+   "title": "General Biology II Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BIOL 3111",
+   "catalogId": 146930,
+   "prefix": "BIOL",
+   "number": "3111",
+   "title": "Cell Biology",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BIOL 3166",
+   "catalogId": 146934,
+   "prefix": "BIOL",
+   "number": "3166",
+   "title": "Genetics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BLAW 3150",
+   "catalogId": 147001,
+   "prefix": "BLAW",
+   "number": "3150",
+   "title": "Business Law I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "BLAW 3250",
+   "catalogId": 147002,
+   "prefix": "BLAW",
+   "number": "3250",
+   "title": "Business Law II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 1251",
+   "catalogId": 147062,
+   "prefix": "CHEM",
+   "number": "1251",
+   "title": "General Chemistry I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 1251L",
+   "catalogId": 147063,
+   "prefix": "CHEM",
+   "number": "1251L",
+   "title": "General Chemistry I Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 1252",
+   "catalogId": 147064,
+   "prefix": "CHEM",
+   "number": "1252",
+   "title": "General Chemistry II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 1252L",
+   "catalogId": 147065,
+   "prefix": "CHEM",
+   "number": "1252L",
+   "title": "General Chemistry II Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 2131",
+   "catalogId": 147068,
+   "prefix": "CHEM",
+   "number": "2131",
+   "title": "Organic Chemistry I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 2131L",
+   "catalogId": 147069,
+   "prefix": "CHEM",
+   "number": "2131L",
+   "title": "Organic Chemistry I Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 2132",
+   "catalogId": 147070,
+   "prefix": "CHEM",
+   "number": "2132",
+   "title": "Organic Chemistry II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 2132L",
+   "catalogId": 147071,
+   "prefix": "CHEM",
+   "number": "2132L",
+   "title": "Organic Chemistry II Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "CHEM 4165",
+   "catalogId": 147088,
+   "prefix": "CHEM",
+   "number": "4165",
+   "title": "Principles of Biochemistry I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "COMM 3160",
+   "catalogId": 147202,
+   "prefix": "COMM",
+   "number": "3160",
+   "title": "Business Communications",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 1301",
+   "catalogId": 149760,
+   "prefix": "DTSC",
+   "number": "1301",
+   "title": "Data and Society A",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 1302",
+   "catalogId": 149767,
+   "prefix": "DTSC",
+   "number": "1302",
+   "title": "Data and Society B",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 2301",
+   "catalogId": 149761,
+   "prefix": "DTSC",
+   "number": "2301",
+   "title": "Modeling and Society A",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 2302",
+   "catalogId": 149762,
+   "prefix": "DTSC",
+   "number": "2302",
+   "title": "Modeling and Society B",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 3201",
+   "catalogId": 154905,
+   "prefix": "DTSC",
+   "number": "3201",
+   "title": "An Introduction to Large Language Models",
+   "minCredits": null,
+   "maxCredits": null,
+   "creditsText": "",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 3601",
+   "catalogId": 149763,
+   "prefix": "DTSC",
+   "number": "3601",
+   "title": "Predictive Analytics and Their Implications A",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 3602",
+   "catalogId": 149764,
+   "prefix": "DTSC",
+   "number": "3602",
+   "title": "Predictive Analytics and Their Implications B",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 4301",
+   "catalogId": 149765,
+   "prefix": "DTSC",
+   "number": "4301",
+   "title": "Data Science for Social Good A",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "DTSC 4302",
+   "catalogId": 149766,
+   "prefix": "DTSC",
+   "number": "4302",
+   "title": "Data Science for Social Good B",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 2101",
+   "catalogId": 147328,
+   "prefix": "ECON",
+   "number": "2101",
+   "title": "Principles of Macroeconomics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 2102",
+   "catalogId": 147329,
+   "prefix": "ECON",
+   "number": "2102",
+   "title": "Principles of Microeconomics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 3112",
+   "catalogId": 147332,
+   "prefix": "ECON",
+   "number": "3112",
+   "title": "Econometrics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 3115",
+   "catalogId": 147333,
+   "prefix": "ECON",
+   "number": "3115",
+   "title": "Money and Banking",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 3122",
+   "catalogId": 147334,
+   "prefix": "ECON",
+   "number": "3122",
+   "title": "Intermediate Microeconomics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 3123",
+   "catalogId": 147335,
+   "prefix": "ECON",
+   "number": "3123",
+   "title": "Intermediate Macroeconomics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 3125",
+   "catalogId": 147336,
+   "prefix": "ECON",
+   "number": "3125",
+   "title": "Managerial Economics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 4100",
+   "catalogId": 147344,
+   "prefix": "ECON",
+   "number": "4100",
+   "title": "Economic Modeling",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 4112",
+   "catalogId": 147345,
+   "prefix": "ECON",
+   "number": "4112",
+   "title": "Advanced Econometrics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 4117",
+   "catalogId": 147347,
+   "prefix": "ECON",
+   "number": "4117",
+   "title": "Business Forecasting & Analytics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ECON 4200",
+   "catalogId": 147355,
+   "prefix": "ECON",
+   "number": "4200",
+   "title": "Senior Seminar",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3120",
+   "catalogId": 147629,
+   "prefix": "FINN",
+   "number": "3120",
+   "title": "Financial Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3221",
+   "catalogId": 147630,
+   "prefix": "FINN",
+   "number": "3221",
+   "title": "Financial Institutions and Markets",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3222",
+   "catalogId": 147631,
+   "prefix": "FINN",
+   "number": "3222",
+   "title": "Investments",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3223",
+   "catalogId": 147632,
+   "prefix": "FINN",
+   "number": "3223",
+   "title": "International Financial Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3224",
+   "catalogId": 147633,
+   "prefix": "FINN",
+   "number": "3224",
+   "title": "Applied Business Finance",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3225",
+   "catalogId": 147634,
+   "prefix": "FINN",
+   "number": "3225",
+   "title": "Commercial Bank Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3226",
+   "catalogId": 147635,
+   "prefix": "FINN",
+   "number": "3226",
+   "title": "Financial Theory and Practice",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3255",
+   "catalogId": 149686,
+   "prefix": "FINN",
+   "number": "3255",
+   "title": "Real Estate Principles",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3261",
+   "catalogId": 147636,
+   "prefix": "FINN",
+   "number": "3261",
+   "title": "Real Estate Finance",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3265",
+   "catalogId": 149687,
+   "prefix": "FINN",
+   "number": "3265",
+   "title": "Asset and Property Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3271",
+   "catalogId": 147637,
+   "prefix": "FINN",
+   "number": "3271",
+   "title": "Principles of Risk Management and Insurance",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3272",
+   "catalogId": 147638,
+   "prefix": "FINN",
+   "number": "3272",
+   "title": "Life Insurance and Professional Financial Planning",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3273",
+   "catalogId": 147639,
+   "prefix": "FINN",
+   "number": "3273",
+   "title": "Property and Liability Insurance Operations",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3276",
+   "catalogId": 147641,
+   "prefix": "FINN",
+   "number": "3276",
+   "title": "Employee Benefits",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3278",
+   "catalogId": 149757,
+   "prefix": "FINN",
+   "number": "3278",
+   "title": "Risk Management and Insurance Sales and Negotiations",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3279",
+   "catalogId": 149401,
+   "prefix": "FINN",
+   "number": "3279",
+   "title": "Advanced Topics in Risk Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3400",
+   "catalogId": 149283,
+   "prefix": "FINN",
+   "number": "3400",
+   "title": "Finance Internship",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 3800",
+   "catalogId": 147643,
+   "prefix": "FINN",
+   "number": "3800",
+   "title": "Directed Study",
+   "minCredits": 1,
+   "maxCredits": 3,
+   "creditsText": "1 to 3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 4159",
+   "catalogId": 147645,
+   "prefix": "FINN",
+   "number": "4159",
+   "title": "Student Managed Investment Fund II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 4160",
+   "catalogId": 149805,
+   "prefix": "FINN",
+   "number": "4160",
+   "title": "Equity Analysis",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 4161",
+   "catalogId": 150359,
+   "prefix": "FINN",
+   "number": "4161",
+   "title": "Financial Modeling",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "FINN 4275",
+   "catalogId": 147640,
+   "prefix": "FINN",
+   "number": "4275",
+   "title": "Enterprise Risk Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "INFO 3130",
+   "catalogId": 147918,
+   "prefix": "INFO",
+   "number": "3130",
+   "title": "Management Information Systems",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "INFO 3236",
+   "catalogId": 147926,
+   "prefix": "INFO",
+   "number": "3236",
+   "title": "Business Analytics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3112",
+   "catalogId": 147968,
+   "prefix": "ITCS",
+   "number": "3112",
+   "title": "Design and Implementation of Object-Oriented Systems",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3120",
+   "catalogId": 147987,
+   "prefix": "ITCS",
+   "number": "3120",
+   "title": "Introduction to Interactive Computer Graphics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3143",
+   "catalogId": 147970,
+   "prefix": "ITCS",
+   "number": "3143",
+   "title": "Operating Systems",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3153",
+   "catalogId": 147973,
+   "prefix": "ITCS",
+   "number": "3153",
+   "title": "Introduction to Artificial Intelligence",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3156",
+   "catalogId": 149404,
+   "prefix": "ITCS",
+   "number": "3156",
+   "title": "Introduction to Machine Learning",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3162",
+   "catalogId": 149370,
+   "prefix": "ITCS",
+   "number": "3162",
+   "title": "Introduction to Data Mining",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3166",
+   "catalogId": 147976,
+   "prefix": "ITCS",
+   "number": "3166",
+   "title": "Introduction to Computer Networks",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3190",
+   "catalogId": 149392,
+   "prefix": "ITCS",
+   "number": "3190",
+   "title": "Introduction to Cloud Computing for Data Analysis",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 3216",
+   "catalogId": 147980,
+   "prefix": "ITCS",
+   "number": "3216",
+   "title": "Introduction to Cognitive Science",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4101",
+   "catalogId": 149394,
+   "prefix": "ITCS",
+   "number": "4101",
+   "title": "Introduction to Natural Language Processing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4102",
+   "catalogId": 147986,
+   "prefix": "ITCS",
+   "number": "4102",
+   "title": "Programming Languages",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4114",
+   "catalogId": 150027,
+   "prefix": "ITCS",
+   "number": "4114",
+   "title": "Real World Algorithms",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4121",
+   "catalogId": 147988,
+   "prefix": "ITCS",
+   "number": "4121",
+   "title": "Information Visualization",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4122",
+   "catalogId": 147989,
+   "prefix": "ITCS",
+   "number": "4122",
+   "title": "Visual Analytics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4123",
+   "catalogId": 147990,
+   "prefix": "ITCS",
+   "number": "4123",
+   "title": "Visualization and Visual Communication",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4124",
+   "catalogId": 149393,
+   "prefix": "ITCS",
+   "number": "4124",
+   "title": "Advanced 3D Computer Graphics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4141",
+   "catalogId": 147991,
+   "prefix": "ITCS",
+   "number": "4141",
+   "title": "Computer Organization and Architecture",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4145",
+   "catalogId": 147992,
+   "prefix": "ITCS",
+   "number": "4145",
+   "title": "Parallel Programming",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4150",
+   "catalogId": 149395,
+   "prefix": "ITCS",
+   "number": "4150",
+   "title": "Mobile Robotics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4151",
+   "catalogId": 147993,
+   "prefix": "ITCS",
+   "number": "4151",
+   "title": "Intelligent Robotics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4152",
+   "catalogId": 147994,
+   "prefix": "ITCS",
+   "number": "4152",
+   "title": "Introduction to Computer Vision",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4230",
+   "catalogId": 147998,
+   "prefix": "ITCS",
+   "number": "4230",
+   "title": "Introduction to Game Design and Development",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4231",
+   "catalogId": 147999,
+   "prefix": "ITCS",
+   "number": "4231",
+   "title": "Advanced Game Design and Development",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4232",
+   "catalogId": 148000,
+   "prefix": "ITCS",
+   "number": "4232",
+   "title": "Game Design and Development Studio",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITCS 4236",
+   "catalogId": 148002,
+   "prefix": "ITCS",
+   "number": "4236",
+   "title": "Artificial Intelligence for Computer Games",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3130",
+   "catalogId": 148017,
+   "prefix": "ITIS",
+   "number": "3130",
+   "title": "Introduction to Human-Centered Computing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3135",
+   "catalogId": 148014,
+   "prefix": "ITIS",
+   "number": "3135",
+   "title": "Front-End Web Application Development",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3140",
+   "catalogId": 150204,
+   "prefix": "ITIS",
+   "number": "3140",
+   "title": "User Experience Methods",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3200",
+   "catalogId": 148019,
+   "prefix": "ITIS",
+   "number": "3200",
+   "title": "Introduction to Information Security and Privacy",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3216",
+   "catalogId": 149635,
+   "prefix": "ITIS",
+   "number": "3216",
+   "title": "Introduction to Cognitive Science",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3246",
+   "catalogId": 148016,
+   "prefix": "ITIS",
+   "number": "3246",
+   "title": "IT Infrastructure and Security",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3300",
+   "catalogId": 148020,
+   "prefix": "ITIS",
+   "number": "3300",
+   "title": "Software Requirements, Analysis and Testing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3310",
+   "catalogId": 148021,
+   "prefix": "ITIS",
+   "number": "3310",
+   "title": "Software Architecture and Design",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 3320",
+   "catalogId": 148022,
+   "prefix": "ITIS",
+   "number": "3320",
+   "title": "Introduction to Software Testing and Assurance",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4164",
+   "catalogId": 155012,
+   "prefix": "ITIS",
+   "number": "4164",
+   "title": "AI-Assisted Software Engineering",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4166",
+   "catalogId": 148023,
+   "prefix": "ITIS",
+   "number": "4166",
+   "title": "Backend Application Development",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4180",
+   "catalogId": 148025,
+   "prefix": "ITIS",
+   "number": "4180",
+   "title": "Mobile Application Development",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4214",
+   "catalogId": 149406,
+   "prefix": "ITIS",
+   "number": "4214",
+   "title": "Usable Security and Privacy",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4221",
+   "catalogId": 148026,
+   "prefix": "ITIS",
+   "number": "4221",
+   "title": "Secure Programming and Penetration Testing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4246",
+   "catalogId": 149705,
+   "prefix": "ITIS",
+   "number": "4246",
+   "title": "Competitive Cyber Defense",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4250",
+   "catalogId": 148027,
+   "prefix": "ITIS",
+   "number": "4250",
+   "title": "Computer Forensics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4260",
+   "catalogId": 149412,
+   "prefix": "ITIS",
+   "number": "4260",
+   "title": "Introduction to Security Analytics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4261",
+   "catalogId": 150102,
+   "prefix": "ITIS",
+   "number": "4261",
+   "title": "Introduction to Secured Cloud Computing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4310",
+   "catalogId": 148028,
+   "prefix": "ITIS",
+   "number": "4310",
+   "title": "Web Mining",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4350",
+   "catalogId": 148018,
+   "prefix": "ITIS",
+   "number": "4350",
+   "title": "Design Prototyping",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4353",
+   "catalogId": 150212,
+   "prefix": "ITIS",
+   "number": "4353",
+   "title": "Social Technology Design",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4355",
+   "catalogId": 150213,
+   "prefix": "ITIS",
+   "number": "4355",
+   "title": "Accessible Design and Implementation",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4358",
+   "catalogId": 150214,
+   "prefix": "ITIS",
+   "number": "4358",
+   "title": "Physical Computing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4360",
+   "catalogId": 150215,
+   "prefix": "ITIS",
+   "number": "4360",
+   "title": "Human-Centered Artificial Intelligence",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITIS 4390",
+   "catalogId": 149287,
+   "prefix": "ITIS",
+   "number": "4390",
+   "title": "Interaction Design Projects",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 1212",
+   "catalogId": 147954,
+   "prefix": "ITSC",
+   "number": "1212",
+   "title": "Introduction to Computer Science I",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 1213",
+   "catalogId": 147955,
+   "prefix": "ITSC",
+   "number": "1213",
+   "title": "Introduction to Computer Science II",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 1600",
+   "catalogId": 147957,
+   "prefix": "ITSC",
+   "number": "1600",
+   "title": "Computing Professionals",
+   "minCredits": 2,
+   "maxCredits": 2,
+   "creditsText": "2",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 2175",
+   "catalogId": 147962,
+   "prefix": "ITSC",
+   "number": "2175",
+   "title": "Logic and Algorithms",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 2181",
+   "catalogId": 149950,
+   "prefix": "ITSC",
+   "number": "2181",
+   "title": "Introduction to Computer Systems",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 2214",
+   "catalogId": 147963,
+   "prefix": "ITSC",
+   "number": "2214",
+   "title": "Data Structures and Algorithms",
+   "minCredits": 4,
+   "maxCredits": 4,
+   "creditsText": "4",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 2600",
+   "catalogId": 149369,
+   "prefix": "ITSC",
+   "number": "2600",
+   "title": "Computer Science Program, Identity, Career",
+   "minCredits": 2,
+   "maxCredits": 2,
+   "creditsText": "2",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 3146",
+   "catalogId": 147971,
+   "prefix": "ITSC",
+   "number": "3146",
+   "title": "Introduction to Operating Systems and Networking",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 3155",
+   "catalogId": 147974,
+   "prefix": "ITSC",
+   "number": "3155",
+   "title": "Software Engineering",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 3160",
+   "catalogId": 147975,
+   "prefix": "ITSC",
+   "number": "3160",
+   "title": "Database Design and Implementation",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 3688",
+   "catalogId": 147983,
+   "prefix": "ITSC",
+   "number": "3688",
+   "title": "Computing and AI: Ethics, Society & Communication",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4155",
+   "catalogId": 147995,
+   "prefix": "ITSC",
+   "number": "4155",
+   "title": "Software Development Projects",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4681",
+   "catalogId": 148005,
+   "prefix": "ITSC",
+   "number": "4681",
+   "title": "Senior Design I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4682",
+   "catalogId": 148006,
+   "prefix": "ITSC",
+   "number": "4682",
+   "title": "Senior Design II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4750",
+   "catalogId": 149830,
+   "prefix": "ITSC",
+   "number": "4750",
+   "title": "Honors Thesis",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4850",
+   "catalogId": 148003,
+   "prefix": "ITSC",
+   "number": "4850",
+   "title": "Senior Project I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4851",
+   "catalogId": 148004,
+   "prefix": "ITSC",
+   "number": "4851",
+   "title": "Senior Project II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4990",
+   "catalogId": 148007,
+   "prefix": "ITSC",
+   "number": "4990",
+   "title": "Undergraduate Research",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "ITSC 4991",
+   "catalogId": 148008,
+   "prefix": "ITSC",
+   "number": "4991",
+   "title": "Undergraduate Thesis",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MATH 1120",
+   "catalogId": 148221,
+   "prefix": "MATH",
+   "number": "1120",
+   "title": "Calculus",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MATH 1241",
+   "catalogId": 148224,
+   "prefix": "MATH",
+   "number": "1241",
+   "title": "Calculus I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MATH 1242",
+   "catalogId": 148225,
+   "prefix": "MATH",
+   "number": "1242",
+   "title": "Calculus II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MATH 2164",
+   "catalogId": 148227,
+   "prefix": "MATH",
+   "number": "2164",
+   "title": "Matrices and Linear Algebra",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MATH 2165",
+   "catalogId": 148223,
+   "prefix": "MATH",
+   "number": "2165",
+   "title": "Introduction to Discrete Structures",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MGMT 3140",
+   "catalogId": 148349,
+   "prefix": "MGMT",
+   "number": "3140",
+   "title": "Management and Organizational Behavior",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MGMT 3277",
+   "catalogId": 148357,
+   "prefix": "MGMT",
+   "number": "3277",
+   "title": "Entrepreneurship",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MGMT 3280",
+   "catalogId": 148358,
+   "prefix": "MGMT",
+   "number": "3280",
+   "title": "Strategic Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "MKTG 3110",
+   "catalogId": 148365,
+   "prefix": "MKTG",
+   "number": "3110",
+   "title": "Principles of Marketing",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "OPER 3100",
+   "catalogId": 148648,
+   "prefix": "OPER",
+   "number": "3100",
+   "title": "Operations Management",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "OPER 3204",
+   "catalogId": 148651,
+   "prefix": "OPER",
+   "number": "3204",
+   "title": "Management of Service and Project Operations",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 1101",
+   "catalogId": 148698,
+   "prefix": "PHYS",
+   "number": "1101",
+   "title": "Introductory Physics I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 1101L",
+   "catalogId": 148699,
+   "prefix": "PHYS",
+   "number": "1101L",
+   "title": "Introductory Physics I Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 1102",
+   "catalogId": 148700,
+   "prefix": "PHYS",
+   "number": "1102",
+   "title": "Introductory Physics II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 1102L",
+   "catalogId": 148701,
+   "prefix": "PHYS",
+   "number": "1102L",
+   "title": "Introductory Physics II Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 2101",
+   "catalogId": 148709,
+   "prefix": "PHYS",
+   "number": "2101",
+   "title": "Physics for Science and Engineering I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 2101L",
+   "catalogId": 148710,
+   "prefix": "PHYS",
+   "number": "2101L",
+   "title": "Physics for Science and Engineering I Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 2102",
+   "catalogId": 148711,
+   "prefix": "PHYS",
+   "number": "2102",
+   "title": "Physics for Science and Engineering II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PHYS 2102L",
+   "catalogId": 148712,
+   "prefix": "PHYS",
+   "number": "2102L",
+   "title": "Physics for Science and Engineering II Laboratory",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 2101",
+   "catalogId": 149924,
+   "prefix": "PROS",
+   "number": "2101",
+   "title": "Project Management: Foundations",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 2102",
+   "catalogId": 149925,
+   "prefix": "PROS",
+   "number": "2102",
+   "title": "Project Management: Practitioner",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 2103",
+   "catalogId": 149926,
+   "prefix": "PROS",
+   "number": "2103",
+   "title": "Project Management: Specialist",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 2201",
+   "catalogId": 149927,
+   "prefix": "PROS",
+   "number": "2201",
+   "title": "Leadership Essentials: Foundations",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 2202",
+   "catalogId": 149928,
+   "prefix": "PROS",
+   "number": "2202",
+   "title": "Leadership Essentials: Practitioner",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 2203",
+   "catalogId": 149929,
+   "prefix": "PROS",
+   "number": "2203",
+   "title": "Leadership Essentials: Specialist",
+   "minCredits": 1,
+   "maxCredits": 1,
+   "creditsText": "1",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 3000",
+   "catalogId": 149933,
+   "prefix": "PROS",
+   "number": "3000",
+   "title": "Topics in Professional Studies",
+   "minCredits": 1,
+   "maxCredits": 3,
+   "creditsText": "1 to 3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "PROS 3105",
+   "catalogId": 150113,
+   "prefix": "PROS",
+   "number": "3105",
+   "title": "Project Management: Process Improvement & Process Design",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "STAT 1220",
+   "catalogId": 149115,
+   "prefix": "STAT",
+   "number": "1220",
+   "title": "Elements of Statistics I",
+   "minCredits": null,
+   "maxCredits": null,
+   "creditsText": "",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "STAT 1221",
+   "catalogId": 149116,
+   "prefix": "STAT",
+   "number": "1221",
+   "title": "Elements of Statistics I",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "STAT 1222",
+   "catalogId": 149117,
+   "prefix": "STAT",
+   "number": "1222",
+   "title": "Introduction to Statistics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "STAT 2122",
+   "catalogId": 149118,
+   "prefix": "STAT",
+   "number": "2122",
+   "title": "Introduction to Probability and Statistics",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "STAT 2223",
+   "catalogId": 149119,
+   "prefix": "STAT",
+   "number": "2223",
+   "title": "Elements of Statistics II",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  },
+  {
+   "code": "STAT 3160",
+   "catalogId": 149127,
+   "prefix": "STAT",
+   "number": "3160",
+   "title": "Applied Multivariate Analysis",
+   "minCredits": 3,
+   "maxCredits": 3,
+   "creditsText": "3",
+   "description": "",
+   "prerequisites": "",
+   "corequisites": "",
+   "restrictions": ""
+  }
+ ],
+ "programs": [
+  {
+   "catalogId": 14045,
+   "name": "Computer Science, AI-Assisted Software Engineering Concentration, B.A.",
+   "type": "Major",
+   "degree": "B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=14045",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "General Education Courses",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Requirements . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1120",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 1222",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": 41,
+     "maxCredits": 44,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 3,
+     "parentIndex": 1,
+     "minCredits": 20,
+     "maxCredits": 20,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Advanced Statistics Course",
+     "level": 3,
+     "parentIndex": 1,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "STAT 2223",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 3,
+     "parentIndex": 1,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "CHOOSE",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, DTSC, ITIS, or ITAI. This requirement can be partially fulfilled by pursuing the following online cluster: Professional Studies Cluster",
+     "courses": [
+      {
+       "code": "PROS 2101",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "PROS 2102",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "PROS 2103",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "PROS 2201",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "PROS 2202",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "PROS 2203",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "PROS 3000",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "PROS 3105",
+       "slot": 8,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Capstone Course",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": 3,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Complete a capstone project. Students have an option of choosing a 2-semester capstone or a 1-semester capstone, choosing from the following:",
+     "courses": [
+      {
+       "code": "ITSC 4681",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 7,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": 15,
+     "maxCredits": 18,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Core Courses",
+     "level": 3,
+     "parentIndex": 6,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITIS 3135",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3310",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4164",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4166",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Elective Courses",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": 0,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "If students choose the 1-semester capstone, they need to take a technical elective course selected from the list below:",
+     "courses": [
+      {
+       "code": "ITIS 3130",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3200",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3300",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4350",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12961,
+   "name": "Computer Science, AI, Robotics, and Gaming Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12961",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "MATH 1242",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 53,
+     "maxCredits": 53,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 29,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2181",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3146",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3155",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 21,
+     "maxCredits": 21,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Required Course",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one course from the list below:",
+     "courses": [
+      {
+       "code": "ITCS 3153",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3156",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "CHOOSE",
+     "chooseCount": 4,
+     "chooseCredits": null,
+     "notes": "Select any four courses from the list below:",
+     "courses": [
+      {
+       "code": "ITCS 3120",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3153",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3156",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4101",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4114",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4123",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4124",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4150",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4151",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4152",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4230",
+       "slot": 11,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4231",
+       "slot": 12,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4236",
+       "slot": 13,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Technical Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Select elective courses from the 3000- or 4000- levels of courses offered by the College of Computing and Informatics.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 13122,
+   "name": "Computer Science, Bioinformatics Concentration, B.A.",
+   "type": "Major",
+   "degree": "B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=13122",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1120",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "STAT 1222",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 39,
+     "maxCredits": 39,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 19,
+     "maxCredits": 19,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Advanced Statistics Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 3121",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Related Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 14,
+     "maxCredits": 14,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BIOL 2120",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BIOL 2130",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1251",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1251L",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1252",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1252L",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 4650",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4900",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4232",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 11,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 12,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Required Concentration Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 18,
+     "maxCredits": 18,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 1101",
+       "slot": 1,
+       "note": "fulfills Natural Science General Education requirement"
+      },
+      {
+       "code": "BINF 2111",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "BINF 3101",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "BINF 4600",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "BIOL 3111",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "BIOL 3166",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 9,
+     "maxCredits": 11,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Subarea 1: Database/Analytics",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": 3,
+     "maxCredits": 4,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 4211",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Subarea 2: Professional Development",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 4171",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4191",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Subarea 3: Upper-Division Elective",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": 3,
+     "maxCredits": 4,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 3131",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 3201",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12964,
+   "name": "Computer Science, Bioinformatics Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12964",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "MATH 1242",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 53,
+     "maxCredits": 53,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 29,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2181",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3146",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3155",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 4650",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4900",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4232",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 11,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 12,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 13,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 21,
+     "maxCredits": 22,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Required Concentration Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 1101",
+       "slot": 1,
+       "note": "fulfills the Natural Science General Education requirement"
+      },
+      {
+       "code": "BINF 2111",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "BINF 3101",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "BINF 4600",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 9,
+     "maxCredits": 11,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Subarea 1: Database/Analytics",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": 3,
+     "maxCredits": 4,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 3121",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4211",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Subarea 2: Professional Development",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 4171",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4191",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Subarea 3: Upper-Division Elective",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": 3,
+     "maxCredits": 4,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 3131",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 3201",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12784,
+   "name": "Computer Science, Cybersecurity Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12784",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "MATH 1242",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 53,
+     "maxCredits": 53,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 29,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2181",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3146",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3155",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 24,
+     "maxCredits": 24,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Required Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 21,
+     "maxCredits": 21,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITIS 3135",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3200",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4221",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4260",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4250",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4261",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 7,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Technical Elective Course",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "OPEN",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one elective course from 3000- or 4000-level courses offered by the College of Computing and Informatics, excluding the courses listed above.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12962,
+   "name": "Computer Science, Data Science Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12962",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "MATH 1242",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 53,
+     "maxCredits": 53,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 29,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2181",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3146",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3155",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 21,
+     "maxCredits": 21,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Required Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITCS 3162",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "CHOOSE",
+     "chooseCount": 3,
+     "chooseCredits": null,
+     "notes": "Select any three courses from the list below:",
+     "courses": [
+      {
+       "code": "ITCS 3156",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3190",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3216",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4114",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4121",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4122",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4152",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "INFO 3236",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4310",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Technical Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "OPEN",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two elective courses from the 3000- or 4000- levels of courses offered by the College of Computing and Informatics.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12965,
+   "name": "Computer Science, Human-Computer Interaction, B.A.",
+   "type": "Major",
+   "degree": "B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12965",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1120",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "STAT 1222",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 40,
+     "maxCredits": 40,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 19,
+     "maxCredits": 19,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Advanced Statistics Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "STAT 2223",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 27,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Core Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 18,
+     "maxCredits": 18,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITIS 3130",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3135",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3140",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4350",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "CHOOSE",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two courses from the following list:",
+     "courses": [
+      {
+       "code": "ITIS 3216",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4214",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4353",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4355",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4358",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4360",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Technical Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "OPEN",
+     "chooseCount": 3,
+     "chooseCredits": null,
+     "notes": "Select three elective courses from 3000- or 4000-level courses offered by the College of Computing and Informatics, excluding the courses listed above.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives). Select elective courses in consultation with advisor.",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12785,
+   "name": "Computer Science, Information Technology Concentration, B.A.",
+   "type": "Major",
+   "degree": "B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12785",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1120",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "STAT 1222",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 40,
+     "maxCredits": 40,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 19,
+     "maxCredits": 19,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Advanced Statistics Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "STAT 2223",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 33,
+     "maxCredits": 33,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Core Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITIS 3130",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3135",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3200",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3300",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Technical Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 18,
+     "maxCredits": 18,
+     "rule": "OPEN",
+     "chooseCount": 6,
+     "chooseCredits": null,
+     "notes": "Select six elective courses from 3000- or 4000-level courses offered by the College of Computing and Informatics, excluding the courses listed above.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives). Select courses in consultation with an advisor.",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 14054,
+   "name": "Computer Science, Pre-medical Bioinformatics Concentration, B.A.",
+   "type": "Major",
+   "degree": "B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=14054",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Requirements",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on all required courses, refer to the General Education Program. The degree plan below includes lab-based and non-lab science courses that fulfill both general education and major requirements, including introductory chemistry, physics, and bioinformatics courses. Students planning to apply to medical school are strongly encouraged to complete the following mathematics course, which aligns with common medical school prerequisites: Students planning to apply to medical school are strongly encouraged to complete the following mathematics course, which aligns with common medical school prerequisites: We additionally recommend the following general education math course for students interested in pursuing the intersection of bioinformatics, human health, and artificial intelligence: MATH 1241 MATH 1242",
+     "courses": []
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 23,
+     "maxCredits": 23,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 3,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Computing Professionals Requirement",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 2,
+     "maxCredits": 2,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1600",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Math for Computer Science",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students should select from one of the following:",
+     "courses": [
+      {
+       "code": "ITSC 2175",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Advanced Statistics Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 3121",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "BINF 4650",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4900",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 61,
+     "maxCredits": 61,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Required Concentration Courses",
+     "level": 4,
+     "parentIndex": 8,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 1101",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 2111",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "BINF 3101",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "BINF 4600",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "BIOL 3111",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Medical Preparation Courses",
+     "level": 4,
+     "parentIndex": 8,
+     "minCredits": 46,
+     "maxCredits": 46,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Scientific Foundations of Human Health",
+     "level": 5,
+     "parentIndex": 10,
+     "minCredits": 16,
+     "maxCredits": 16,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Foundations in Chemistry",
+     "level": 6,
+     "parentIndex": 11,
+     "minCredits": 8,
+     "maxCredits": 8,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "CHEM 1251",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1251L",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1252",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "CHEM 1252L",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Foundations in Physics",
+     "level": 6,
+     "parentIndex": 11,
+     "minCredits": 8,
+     "maxCredits": 8,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "OR OR",
+     "courses": [
+      {
+       "code": "PHYS 1101",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "PHYS 1101L",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "PHYS 1102",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "PHYS 1102L",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "PHYS 2101",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "PHYS 2101L",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "PHYS 2102",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "PHYS 2102L",
+       "slot": 8,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Early Professional Development",
+     "level": 5,
+     "parentIndex": 10,
+     "minCredits": 19,
+     "maxCredits": 19,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BIOL 2120",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BIOL 2120L",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "BIOL 2130",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "BIOL 2130L",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "CHEM 2131",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "CHEM 2131L",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "CHEM 2132",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "CHEM 2132L",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "CHEM 4165",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Bioinformatic Approaches to Molecular Medicine",
+     "level": 5,
+     "parentIndex": 10,
+     "minCredits": 4,
+     "maxCredits": 4,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 3201",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Computational Thinking for Modern Medicine",
+     "level": 5,
+     "parentIndex": 10,
+     "minCredits": 4,
+     "maxCredits": 4,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 3131",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4211",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Ethics, Enterprise, and Regulation in Modern Biomedicine",
+     "level": 5,
+     "parentIndex": 10,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BINF 4171",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "BINF 4191",
+       "slot": 1,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12963,
+   "name": "Computer Science, Systems and Networks Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12963",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "MATH 1242",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 53,
+     "maxCredits": 53,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 29,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2181",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3146",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3155",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: ​Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 21,
+     "maxCredits": 21,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Concentration Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "CHOOSE",
+     "chooseCount": 5,
+     "chooseCredits": null,
+     "notes": "Select five of the following:",
+     "courses": [
+      {
+       "code": "ITCS 3143",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3156",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3166",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3190",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4102",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4141",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITCS 4145",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3200",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3246",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4166",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Technical Elective Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "OPEN",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two elective courses from the 3000- or 4000- levels of courses offered by the College of Computing and Informatics.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12786,
+   "name": "Computer Science, Web/Mobile Development and Software Engineering Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12786",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Students majoring in Computer Science should plan on taking the following courses that meet both general education and major requirements:",
+     "courses": [
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": "fulfills Quantitative/Data requirement"
+      },
+      {
+       "code": "MATH 1242",
+       "slot": 2,
+       "note": "fulfills Quantitative/Data requirement"
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 53,
+     "maxCredits": 53,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 29,
+     "maxCredits": 29,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2600",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2175",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2181",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3146",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3155",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3688",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 2164",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 2122",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses in Other Disciplines",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": 15,
+     "notes": "Select 15 elective credit hours. Courses that count towards this requirement must have a discipline prefix other than ITSC, ITCS, or ITIS. This requirement can be fulfilled by pursuing a/an: Minor Second major Honors program Undergraduate certificate Set of courses selected by the student that do not satisfy any other degree requirement",
+     "courses": []
+    },
+    {
+     "label": "Capstone Course",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ITCS 4232",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4390",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4246",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4155",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4681",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4682",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4850",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4851",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4990",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4991",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "ITSC 4750",
+       "slot": 11,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 27,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Required Concentration Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITIS 3135",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3310",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4221",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Concentration Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "CHOOSE",
+     "chooseCount": 3,
+     "chooseCredits": null,
+     "notes": "Select three courses from the lists below. (The categories are only to indicate sub-areas of this concentration; the courses selected do not need to be within one category.)",
+     "courses": []
+    },
+    {
+     "label": "Software Design Courses",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITCS 3112",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3130",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4350",
+       "slot": 3,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Software Development Courses",
+     "level": 5,
+     "parentIndex": 9,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITIS 3300",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITIS 3320",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4166",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITIS 4180",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Technical Elective Concentration Courses",
+     "level": 4,
+     "parentIndex": 7,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "OPEN",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two elective courses from the 3000- or 4000-levels of courses offered by the College of Computing and Informatics.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 13199,
+   "name": "Data Science, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=13199",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information. Out of 31-32 credit hours, 15 credit hours are double-counted for major courses. Successful completion of DTSC 1302 satisfies the General Education requirement for Inquiry in the Sciences - Social Sciences.",
+     "courses": []
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 55,
+     "maxCredits": 55,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": []
+    },
+    {
+     "label": "Data Science Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 18,
+     "maxCredits": 18,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Each of the Data Science Studio courses is taught as a semester long 6-credit hour course; however, for registration purposes, each studio is broken into two separate classes that are taught in the A and B sessions of a semester.",
+     "courses": [
+      {
+       "code": "DTSC 1301",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "DTSC 1302",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "DTSC 2301",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "DTSC 2302",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "DTSC 3601",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "DTSC 3602",
+       "slot": 6,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Mathematics and Statistics Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "MATH 1120",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "MATH 1241",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "STAT 1220",
+       "slot": 2,
+       "note": "BUSN) (3"
+      },
+      {
+       "code": "STAT 1221",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "STAT 1222",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "MATH 2164",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "STAT 2223",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "STAT 3160",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Computing Core Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 16,
+     "maxCredits": 16,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "DTSC 3201",
+       "slot": 1,
+       "note": "LLMs) (3"
+      },
+      {
+       "code": "MATH 2165",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3162",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Capstone Courses",
+     "level": 4,
+     "parentIndex": 2,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "DTSC 4301",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "DTSC 4302",
+       "slot": 2,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 13120,
+   "name": "Data Science, Minor",
+   "type": "Minor",
+   "degree": "",
+   "totalCredits": 18,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=13120",
+   "collegeCode": "CCI",
+   "groups": [
+    {
+     "label": "Minor Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The minor requires a minimum of 17 credit hours.",
+     "courses": []
+    },
+    {
+     "label": "Core Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ITSC 1212",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITSC 1213",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 2214",
+       "slot": 3,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "CHOOSE",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two of the following:",
+     "courses": [
+      {
+       "code": "ITCS 3162",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ITCS 3190",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ITSC 3160",
+       "slot": 3,
+       "note": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "catalogId": 12771,
+   "name": "Economics, Business Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12771",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The following courses are required. Students may attempt each of these courses two times.",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information.",
+     "courses": []
+    },
+    {
+     "label": "Business Core Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "CHOOSE",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two of the following:",
+     "courses": [
+      {
+       "code": "BLAW 3150",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "INFO 3130",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3140",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "MKTG 3110",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "OPER 3100",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 24,
+     "maxCredits": 24,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ECON 3112",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ECON 3122",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3123",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ECON 3125",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ECON 4200",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "FINN 3120",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "COMM 3160",
+       "slot": 7,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Quantitative Skills Courses",
+     "level": 4,
+     "parentIndex": 3,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ECON 4100",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ECON 4112",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 4117",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "INFO 3236",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Note:",
+     "level": 5,
+     "parentIndex": 4,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "It is recommended that students who plan to pursue graduate work in economics complete MATH 1241 , ECON 4100 , and, as available, ECON 4112 and ECON 4117 . Also, they should consider additional work in mathematics but should consult with an Academic Advisor concerning specific courses.",
+     "courses": []
+    },
+    {
+     "label": "Restricted Elective Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "OPEN",
+     "chooseCount": 3,
+     "chooseCredits": null,
+     "notes": "Select three ECON Electives from the 3000- or 4000- level, excluding the courses listed above.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    },
+    {
+     "label": "High-Impact Experience",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "To obtain this degree, students must complete at least one high-impact experience (e.g., internship, study abroad, project-based learning, case competition (or similar experience) or undergraduate research). Students with current, relevant work experience may seek approval to use that experience to fulfill the high-impact experience degree requirement.",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12772,
+   "name": "Economics, Liberal Arts Concentration, B.S.",
+   "type": "Major",
+   "degree": "B.S.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12772",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The following courses are required. Students may attempt each of the courses two times.",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information.",
+     "courses": []
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ECON 3112",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ECON 3122",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3123",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ECON 4200",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "COMM 3160",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Restricted Elective Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "OPEN",
+     "chooseCount": 4,
+     "chooseCredits": null,
+     "notes": "Select four ECON Electives from the 3000- or 4000-level, excluding the courses listed above. Note: It is recommended that students who plan to pursue graduate work in economics complete MATH 1241 , ECON 4100 , and, as available, ECON 4112 and ECON 4117 . Also, they should consider additional work in mathematics but should consult with an Academic Advisor concerning specific courses.",
+     "courses": []
+    },
+    {
+     "label": "Concentration Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must complete a non-business focus area for the Liberal Arts concentration. Credit hours vary depending on the option chosen. That focus area can be completed in one of three ways: Completion of a minor offered outside the Belk College of Business. Credit hours vary dependent on the minor requirements. Completion of a double major offered outside the Belk College of Business. Credit hours vary dependent on the major requirements. Completion of a student-directed focus area. Completion of 15 credit hours of 3000-level or above courses offered outside the Belk College of Business.",
+     "courses": []
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    },
+    {
+     "label": "High-Impact Experience",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "To obtain this degree, students must complete at least one high-impact experience (e.g., internship, study abroad, project-based learning, case competition (or similar experience) or undergraduate research). Students with current, relevant work experience may seek approval to use that experience to fulfill the high-impact experience degree requirement.",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12773,
+   "name": "Economics, Minor",
+   "type": "Minor",
+   "degree": "",
+   "totalCredits": 18,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12773",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Minor Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "A Minor in Economics requires 18 credit hours of economics courses. Students may attempt each of the courses in the minor two times.",
+     "courses": []
+    },
+    {
+     "label": "Required Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "ECON 2101",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ECON 2102",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3122",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ECON 3125",
+       "slot": 3,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Elective Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "OPEN",
+     "chooseCount": 3,
+     "chooseCredits": null,
+     "notes": "Select three ECON elective courses from the following, excluding the courses listed above: ECON 3XXX-4XXX - Economics Elective (3) ECON 3XXX-4XXX - Economics Elective (3) ECON 3XXX-4XXX - Economics Elective (3)",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12774,
+   "name": "Finance, Finance Concentration, B.S.B.A.",
+   "type": "Major",
+   "degree": "B.S.B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12774",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The following courses are required for a B.S.B.A. degree in Finance with a Concentration in Finance. Students may attempt each of these courses two times.",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information.",
+     "courses": []
+    },
+    {
+     "label": "Business Core Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 27,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BLAW 3150",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "COMM 3160",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3125",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3120",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "INFO 3130",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3140",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3280",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "MKTG 3110",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "OPER 3100",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "FINN 3222",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "FINN 3226",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3311",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3323",
+       "slot": 3,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Restricted Elective Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 9,
+     "maxCredits": 9,
+     "rule": "CHOOSE",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two to three of the following: Select one of the following courses if only two courses selected above: Select one of the following courses if only two courses selected above:",
+     "courses": [
+      {
+       "code": "BLAW 3250",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ECON 3112",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3115",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3221",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "FINN 3223",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "FINN 3224",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "FINN 3225",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "FINN 3255",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "FINN 3261",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "FINN 3271",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "FINN 3272",
+       "slot": 11,
+       "note": ""
+      },
+      {
+       "code": "FINN 3273",
+       "slot": 12,
+       "note": ""
+      },
+      {
+       "code": "FINN 3278",
+       "slot": 13,
+       "note": ""
+      },
+      {
+       "code": "FINN 3279",
+       "slot": 14,
+       "note": ""
+      },
+      {
+       "code": "FINN 4159",
+       "slot": 15,
+       "note": ""
+      },
+      {
+       "code": "FINN 4160",
+       "slot": 16,
+       "note": ""
+      },
+      {
+       "code": "FINN 4161",
+       "slot": 17,
+       "note": ""
+      },
+      {
+       "code": "FINN 4275",
+       "slot": 18,
+       "note": ""
+      },
+      {
+       "code": "INFO 3236",
+       "slot": 19,
+       "note": ""
+      },
+      {
+       "code": "OPER 3204",
+       "slot": 20,
+       "note": ""
+      },
+      {
+       "code": "FINN 3400",
+       "slot": 21,
+       "note": ""
+      },
+      {
+       "code": "FINN 3800",
+       "slot": 22,
+       "note": "Chair approval required"
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12776,
+   "name": "Finance, Finance/Accounting Joint Concentration, B.S.B.A.",
+   "type": "Major",
+   "degree": "B.S.B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12776",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The following courses are required for a B.S.B.A. degree in Finance with a joint Finance/Accounting Concentration. Students may attempt each of these courses two times.",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information.",
+     "courses": []
+    },
+    {
+     "label": "Business Core Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 27,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BLAW 3150",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "COMM 3160",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3125",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3120",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "INFO 3130",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3140",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3280",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "MKTG 3110",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "OPER 3100",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "FINN 3222",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "FINN 3226",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3311",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3323",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3312",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3324",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Restricted Elective Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one to two of the following: Select one of the following if only one course selected above: Select one of the following if only one course selected above:",
+     "courses": [
+      {
+       "code": "ACCT 3325",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3330",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3350",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3380",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ACCT 4220",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "BLAW 3250",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "ECON 3112",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "FINN 3221",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "FINN 3223",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "FINN 3224",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "FINN 3225",
+       "slot": 11,
+       "note": ""
+      },
+      {
+       "code": "FINN 3278",
+       "slot": 12,
+       "note": ""
+      },
+      {
+       "code": "FINN 3279",
+       "slot": 13,
+       "note": ""
+      },
+      {
+       "code": "FINN 4160",
+       "slot": 14,
+       "note": ""
+      },
+      {
+       "code": "FINN 4161",
+       "slot": 15,
+       "note": ""
+      },
+      {
+       "code": "FINN 3400",
+       "slot": 16,
+       "note": ""
+      },
+      {
+       "code": "FINN 3800",
+       "slot": 17,
+       "note": "Department Chair approval required"
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 13184,
+   "name": "Finance, Real Estate Concentration, B.S.B.A.",
+   "type": "Major",
+   "degree": "B.S.B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=13184",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The following courses are required for a B.S.B.A. degree in Finance with a Concentration in Real Estate. Students may attempt each of these courses two times.",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information.",
+     "courses": []
+    },
+    {
+     "label": "Business Core Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 27,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BLAW 3150",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "COMM 3160",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3125",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3120",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "INFO 3130",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3140",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3280",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "MKTG 3110",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "OPER 3100",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 15,
+     "maxCredits": 15,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "FINN 3222",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "FINN 3226",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "FINN 3255",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3261",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "FINN 3265",
+       "slot": 5,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Restricted Elective Course",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 3,
+     "maxCredits": 3,
+     "rule": "CHOOSE",
+     "chooseCount": 1,
+     "chooseCredits": null,
+     "notes": "Select one of the following:",
+     "courses": [
+      {
+       "code": "ACCT 3311",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "ACCT 3323",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "BLAW 3250",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "ECON 3112",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "ECON 3115",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "FINN 3221",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "FINN 3223",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "FINN 3224",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "FINN 3225",
+       "slot": 9,
+       "note": ""
+      },
+      {
+       "code": "FINN 3271",
+       "slot": 10,
+       "note": ""
+      },
+      {
+       "code": "FINN 3272",
+       "slot": 11,
+       "note": ""
+      },
+      {
+       "code": "FINN 3273",
+       "slot": 12,
+       "note": ""
+      },
+      {
+       "code": "FINN 3278",
+       "slot": 13,
+       "note": ""
+      },
+      {
+       "code": "FINN 3279",
+       "slot": 14,
+       "note": ""
+      },
+      {
+       "code": "FINN 3400",
+       "slot": 15,
+       "note": ""
+      },
+      {
+       "code": "FINN 3800",
+       "slot": 16,
+       "note": "department chair approval required"
+      },
+      {
+       "code": "FINN 4159",
+       "slot": 17,
+       "note": ""
+      },
+      {
+       "code": "FINN 4160",
+       "slot": 18,
+       "note": ""
+      },
+      {
+       "code": "FINN 4161",
+       "slot": 19,
+       "note": ""
+      },
+      {
+       "code": "FINN 4275",
+       "slot": 20,
+       "note": ""
+      },
+      {
+       "code": "OPER 3204",
+       "slot": 21,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  },
+  {
+   "catalogId": 12775,
+   "name": "Finance, Risk Management and Insurance Concentration, B.S.B.A.",
+   "type": "Major",
+   "degree": "B.S.B.A.",
+   "totalCredits": 120,
+   "catalogUrl": "https://catalog.charlotte.edu/preview_program.php?catoid=42&poid=12775",
+   "collegeCode": "BCOB",
+   "groups": [
+    {
+     "label": "Degree Requirements",
+     "level": 2,
+     "parentIndex": null,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "The following courses are required for a B.S.B.A. degree in Finance with a Risk Management and Insurance Concentration. Students may attempt each of these courses two times.",
+     "courses": []
+    },
+    {
+     "label": "General Education Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 31,
+     "maxCredits": 32,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "For details on required courses, refer to the General Education Program . Total hours to satisfy General Education Requirements may vary as some general education requirements may be double-counted in the major with departmental approval. Please see your advisor for information.",
+     "courses": []
+    },
+    {
+     "label": "Business Core Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 27,
+     "maxCredits": 27,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "BLAW 3150",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "COMM 3160",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "ECON 3125",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3120",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "INFO 3130",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3140",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3280",
+       "slot": 7,
+       "note": ""
+      },
+      {
+       "code": "MKTG 3110",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "OPER 3100",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Major Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 12,
+     "maxCredits": 12,
+     "rule": "ALL",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "",
+     "courses": [
+      {
+       "code": "FINN 3271",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "FINN 3272",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "FINN 3273",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 4275",
+       "slot": 4,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Restricted Elective Courses",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": 6,
+     "maxCredits": 6,
+     "rule": "CHOOSE",
+     "chooseCount": 2,
+     "chooseCredits": null,
+     "notes": "Select two of the following:",
+     "courses": [
+      {
+       "code": "ACCT 3323",
+       "slot": 1,
+       "note": ""
+      },
+      {
+       "code": "FINN 3222",
+       "slot": 2,
+       "note": ""
+      },
+      {
+       "code": "FINN 3276",
+       "slot": 3,
+       "note": ""
+      },
+      {
+       "code": "FINN 3278",
+       "slot": 4,
+       "note": ""
+      },
+      {
+       "code": "FINN 3279",
+       "slot": 5,
+       "note": ""
+      },
+      {
+       "code": "FINN 3400",
+       "slot": 6,
+       "note": ""
+      },
+      {
+       "code": "FINN 3800",
+       "slot": 7,
+       "note": "Department Chair approval required"
+      },
+      {
+       "code": "FINN 4160",
+       "slot": 8,
+       "note": ""
+      },
+      {
+       "code": "MGMT 3277",
+       "slot": 9,
+       "note": ""
+      }
+     ]
+    },
+    {
+     "label": "Unrestricted Elective Courses, Double Major and/or Minor to Complete Requirements for Graduation",
+     "level": 3,
+     "parentIndex": 0,
+     "minCredits": null,
+     "maxCredits": null,
+     "rule": "OPEN",
+     "chooseCount": null,
+     "chooseCredits": null,
+     "notes": "Students must earn a minimum of 120 credit hours to graduate. This requirement can be fulfilled through a combination of elective courses, a minor, or a double major. The 120-credit minimum must be satisfied regardless of the specific academic path chosen (e.g., a minor combined with electives).",
+     "courses": []
+    }
+   ]
+  }
+ ]
+}
