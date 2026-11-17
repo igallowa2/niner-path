@@ -3,6 +3,7 @@ import { STATUSES, type Application, type Status } from '../types'
 interface Props {
   app: Application
   onStatusChange: (id: string, status: Status) => void
+  onDelete: (app: Application) => void
 }
 
 function initials(company: string) {
@@ -15,7 +16,7 @@ function formatDate(iso: string) {
   return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
-export function ApplicationCard({ app, onStatusChange }: Props) {
+export function ApplicationCard({ app, onStatusChange, onDelete }: Props) {
   const meta = [app.location, app.jobType, app.industry].filter(Boolean).join(' · ')
   const lastChange = app.timeline[app.timeline.length - 1]
 
@@ -42,6 +43,9 @@ export function ApplicationCard({ app, onStatusChange }: Props) {
         >
           {STATUSES.map((s) => <option key={s}>{s}</option>)}
         </select>
+        <button type="button" className="link-btn" onClick={() => onDelete(app)} aria-label={`Delete ${app.company}, ${app.role}`}>
+          Delete
+        </button>
       </div>
     </article>
   )
