@@ -35,6 +35,17 @@ export function catalogUrl(path: string): string {
 
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
+export class BlockedError extends Error {
+  constructor(url: string) {
+    super(
+      `The catalog site is blocking automated requests (bot protection) at ${url}. Stopping without retrying.\n` +
+        'Pages already downloaded are cached, so nothing is lost. Try again much later, or ask the\n' +
+        'Registrar for Acalog API access instead.',
+    )
+    this.name = 'BlockedError'
+  }
+}
+
 /** Returns the page HTML from the cache, or downloads it (waiting for the crawl delay first). */
 export async function getPage(url: string, log: (msg: string) => void = console.log): Promise<string> {
   const path = new URL(url).pathname
@@ -53,13 +64,20 @@ export async function getPage(url: string, log: (msg: string) => void = console.
 
   writeFileSync(LAST_REQUEST_FILE, String(Date.now()))
   const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' } })
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`)
   const html = await res.text()
-  // The site may answer with a bot check (AWS WAF) instead of the page. We never try to get
-  // around it: stop, don't cache it, and use pages saved from a browser instead (see README).
-  if (/awswaf|verify that you're not a robot|challenge-container/i.test(html)) {
-    throw new Error(`The catalog returned a bot check for ${url}. Stopping without retrying; save the pages from your browser instead.`)
+  // The site may answer with a bot check (AWS WAF) instead of the page: a challenge page, an
+  // empty 202, a 429, or an x-amzn-waf-action header. We never try to get around it: stop,
+  // don't cache it, and try again much later (or ask the Registrar for Acalog API access).
+  if (
+    res.headers.get('x-amzn-waf-action') ||
+    res.status === 202 ||
+    res.status === 429 ||
+    html.length < 1000 ||
+    /awswaf|verify that you're not a robot|challenge-container/i.test(html)
+  ) {
+    throw new BlockedError(url)
   }
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`)
   writeFileSync(file, html)
   log(`  fetched ${url} (${Math.round(html.length / 1024)} KB)`)
   return html

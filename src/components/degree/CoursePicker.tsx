@@ -1,5 +1,6 @@
 import { useId, useState, type KeyboardEvent } from 'react'
 import type { CourseIndex } from '../../lib/catalog/progress'
+import { normalizeCode } from '../../lib/catalog/progress'
 import { searchCourses } from '../../lib/catalog/search'
 import type { CompletedCourse, Course } from '../../lib/catalog/types'
 
@@ -10,6 +11,11 @@ interface Props {
   onAdd: (course: CompletedCourse) => void
 }
 
+const PLACEHOLDER: Course = {
+  code: '', subject: '', number: '', title: '', credits: 3, creditsMax: 3, description: '', prerequisitesRaw: '', corequisitesRaw: '',
+  prerequisites: null, corequisites: null, prereqStatus: 'none', prereqReviewReasons: [], skills: [], sourceUrl: '',
+}
+
 /** Searchable combobox for adding a course, plus whether it's done or in progress. */
 export function CoursePicker({ catalog, taken, onAdd }: Props) {
   const id = useId()
@@ -17,7 +23,12 @@ export function CoursePicker({ catalog, taken, onAdd }: Props) {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
   const [status, setStatus] = useState<CompletedCourse['status']>('completed')
-  const results = searchCourses(catalog, query, taken)
+  // A typed course code that isn't in the catalog data can still be added (e.g. General Education).
+  const typedCode = /^[A-Za-z]{2,4}\s*\d{4}[A-Za-z]?$/.test(query.trim()) ? normalizeCode(query) : null
+  const found = searchCourses(catalog, query, taken)
+  const extra: Course[] =
+    typedCode && !catalog[typedCode] && !taken.includes(typedCode) ? [{ ...PLACEHOLDER, code: typedCode, title: 'Not in the catalog data (counts as 3 credits)' }] : []
+  const results = [...found, ...extra]
   const open = results.length > 0
 
   function choose(course: Course) {
@@ -73,7 +84,7 @@ export function CoursePicker({ catalog, taken, onAdd }: Props) {
               onMouseDown={(e) => { e.preventDefault(); choose(c) }}
               onMouseEnter={() => setActive(i)}
             >
-              <strong>{c.code}</strong> {c.title} <span className="muted small">· {c.credits} cr</span>
+              <strong>{c.code}</strong> {c.title}{c.subject && <span className="muted small"> · {c.credits} cr</span>}
             </li>
           ))}
         </ul>

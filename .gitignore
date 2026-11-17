@@ -42,3 +42,6 @@ dist-ssr
 scripts/catalog/.cache/
 scripts/catalog/input/*.html
 scripts/catalog/input/*_files/
+
+# Catalog import cache (raw catalog pages)
+.catalog-cache/

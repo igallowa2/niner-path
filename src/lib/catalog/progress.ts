@@ -155,15 +155,17 @@ export function getDegreeProgress(completed: CompletedCourse[], program: Program
     if (req.kind === 'course') {
       const pick = candidates(req, [req.course, ...(req.alternatives ?? [])])[0]
       if (pick) applied = [claim(req, pick)]
-    } else if (req.kind === 'chooseN') {
+    } else if (req.kind === 'chooseN' && req.credits === undefined) {
       need = req.count
       applied = candidates(req, req.from).slice(0, req.count).map((r) => claim(req, r))
     } else {
-      need = req.credits
+      // Credit-hour rules: "N credits from this list" or "N credits of 3000+ ECON".
+      need = req.kind === 'chooseN' ? req.credits! : req.credits
       unit = 'credits'
+      const pool = req.kind === 'chooseN' ? req.from : [...records.keys()].filter((c) => matchesCreditsRule(c, req))
       let total = 0
-      for (const r of candidates(req, [...records.keys()].filter((c) => matchesCreditsRule(c, req)))) {
-        if (total >= req.credits) break
+      for (const r of candidates(req, pool)) {
+        if (total >= need) break
         const a = claim(req, r)
         applied.push(a)
         total += a.credits

@@ -115,6 +115,15 @@ describe('getDegreeProgress', () => {
     expect(status(p, 'theory')).toMatchObject({ status: 'needed', have: 1, need: 2, unit: 'courses' })
   })
 
+  it('handles "choose N credit hours from this list"', () => {
+    const byCredits: Program = {
+      ...program,
+      sections: [{ id: 's', title: 'S', requirements: [{ id: 'cr', kind: 'chooseN', label: '4 credits', count: 0, credits: 4, from: ['ECON 2000', 'ECON 3112'] }] }],
+    }
+    expect(status(getDegreeProgress([done('ECON 2000')], byCredits, catalog), 'cr')).toMatchObject({ status: 'needed', have: 1, need: 4, unit: 'credits' })
+    expect(status(getDegreeProgress([done('ECON 2000'), done('ECON 3112')], byCredits, catalog), 'cr')).toMatchObject({ status: 'done', have: 4 })
+  })
+
   it('counts a course toward only one requirement by default', () => {
     // ECON 3112 and 3113 are used by "choose 2", so the 3000+ elective pool only gets ECON 4000.
     const p = getDegreeProgress([done('ECON 3112'), done('ECON 3113'), done('ECON 4000')], program, catalog)

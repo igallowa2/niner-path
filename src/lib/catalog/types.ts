@@ -60,10 +60,12 @@ export interface CourseRequirement extends RequirementBase {
   alternatives?: string[]
 }
 
-/** "Choose N of these courses." */
+/** "Choose N of these courses", or with `credits`, "choose N credit hours from these courses". */
 export interface ChooseRequirement extends RequirementBase {
   kind: 'chooseN'
   count: number
+  /** When set, the student needs this many credit hours from the list instead of `count` courses. */
+  credits?: number
   from: string[]
 }
 

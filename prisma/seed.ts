@@ -1,7 +1,8 @@
-// Fills the local development database with the three sample applications.
-// Run with: npm run db:seed  (this clears existing applications in YOUR local database only)
+// Fills the local development database with the three sample applications and the course catalog.
+// Run with: npm run db:seed  (this clears existing applications and catalog data in YOUR local database only)
 import { PrismaClient } from '@prisma/client'
 import { sampleApplications } from '../src/lib/sampleData'
+import { seedCatalog } from './seedCatalog'
 
 const prisma = new PrismaClient()
 
@@ -25,6 +26,8 @@ async function main() {
   }
 
   console.log(`Seeded ${sampleApplications.length} sample applications.`)
+
+  await seedCatalog(prisma)
 }
 
 main()

@@ -103,6 +103,6 @@ export const SKILL_KEYWORDS: SkillDefinition[] = [
   {
     name: 'Communication',
     onet: { type: 'Skill', element: 'Speaking' },
-    keywords: ['presentation*', 'oral communication', 'communication skill*', 'public speaking'],
+    keywords: ['presentation*', 'oral communication', 'communication skill*', 'business communication*', 'public speaking'],
   },
 ]

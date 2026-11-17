@@ -1,50 +1,58 @@
-import { useCompletedCourses, GRADE_OPTIONS } from '../lib/catalog/completedCourses'
-import { catalog as defaultCatalog, DEFAULT_PROGRAM_ID, getProgram } from '../lib/catalog/data'
-import { getDegreeProgress, type CourseIndex } from '../lib/catalog/progress'
-import type { LetterGrade, Program } from '../lib/catalog/types'
-import { CoursePicker } from './degree/CoursePicker'
+import { GRADE_OPTIONS, useCompletedCourses } from '../lib/catalog/completedCourses'
+import { useDegreeProgram } from '../lib/catalog/data'
 import { requirementDetail } from '../lib/catalog/display'
-import { AdvisorNote, StatusBadge } from './degree/DegreeParts'
+import { getDegreeProgress } from '../lib/catalog/progress'
+import type { LetterGrade } from '../lib/catalog/types'
+import { CoursePicker } from './degree/CoursePicker'
+import { AdvisorNote, DegreeError, DegreeLoading, StatusBadge } from './degree/DegreeParts'
 
-interface Props {
-  /** Defaults to the student's program and the generated catalog data; tests pass their own. */
-  program?: Program
-  catalog?: CourseIndex
-}
-
-export function MyDegree({ program = getProgram(DEFAULT_PROGRAM_ID), catalog = defaultCatalog }: Props) {
+export function MyDegree() {
+  const { data, programName, selectProgram, retry } = useDegreeProgram()
   const { courses, add, update, remove } = useCompletedCourses()
 
-  if (!program) {
+  const header = (
+    <header className="tracker-header">
+      <div>
+        <h1>My Degree</h1>
+        <p className="muted">
+          {data.status === 'ready' ? `${data.program.name} · ${data.program.catalogYear} catalog` : 'Your degree requirements and academic progress.'}
+        </p>
+      </div>
+    </header>
+  )
+
+  if (data.status !== 'ready') {
     return (
       <section className="degree-page">
-        <header className="tracker-header">
-          <div>
-            <h1>My Degree</h1>
-            <p className="muted">Your degree requirements and academic progress.</p>
-          </div>
-        </header>
+        {header}
         <AdvisorNote />
-        <div className="empty">
-          <h2>Catalog data isn't loaded yet</h2>
-          <p className="muted">Run the catalog script (see scripts/catalog/README.md) to add your program's requirements.</p>
-        </div>
+        {data.status === 'loading' ? <DegreeLoading /> : <DegreeError message={data.message} onRetry={retry} />}
       </section>
     )
   }
 
+  const { program, catalog, majors } = data
   const progress = getDegreeProgress(courses, program, catalog)
   const title = (code: string) => catalog[code]?.title ?? ''
 
   return (
     <section className="degree-page">
-      <header className="tracker-header">
-        <div>
-          <h1>My Degree</h1>
-          <p className="muted">{program.name} · {program.catalogYear} catalog</p>
-        </div>
-      </header>
+      {header}
       <AdvisorNote />
+
+      <div className="planner-controls">
+        <div className="field degree-program-field">
+          <label htmlFor="degree-program">Program</label>
+          <select id="degree-program" value={programName === program.name ? programName : program.name} onChange={(e) => selectProgram(e.target.value)}>
+            {majors.map((m) => <option key={m.id} value={m.name}>{m.name}</option>)}
+          </select>
+        </div>
+        {program.sourceUrl && (
+          <a className="degree-catalog-link" href={program.sourceUrl} target="_blank" rel="noopener noreferrer">
+            View in catalog ↗<span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        )}
+      </div>
 
       <article className="degree-card degree-summary" aria-labelledby="degree-summary-title">
         <div className="degree-card-header">
@@ -122,7 +130,6 @@ export function MyDegree({ program = getProgram(DEFAULT_PROGRAM_ID), catalog = d
                     {requirementDetail(r)}
                     {r.requirement.minGrade && ` · minimum grade ${r.requirement.minGrade}`}
                   </p>
-                  {r.requirement.note && <p className="muted small">{r.requirement.note}</p>}
                 </div>
                 <StatusBadge status={r.status} />
               </li>
